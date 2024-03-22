@@ -1,7 +1,13 @@
+import { Suspense } from 'react';
 import Image from "next/image";
-import styles from "../styles/header.module.css";
+import styles from "@/styles/header.module.css";
 import Navbar from "@/components/Navbar";
 import { tropicalOrange } from "@/fonts/fonts";
+import surfing from "../../public/surfing.png";
+import goodvibe from "../../public/goodvibe.png";
+import packages from "../../public/packages.png";
+import season from "../../public/season.png";
+import VideoComponent from '../components/VideoComponent';
 
 export default function Home() {
   return (
@@ -104,6 +110,101 @@ export default function Home() {
           </button>
         </div>
       </header>
+      <div className="container mt-5 pt-5">
+        <div className="row mb-5">
+          <div className="col-12 text-center">
+            <p className="fs-2 fw-bold spacing">
+              PURE BLUE SURF & YOGA RETREAT
+            </p>
+            <p className="spacing">HIMMAFUSHI , MALDIVES</p>
+          </div>
+        </div>
+        <div className="row align-items-center justify-content-around mb-5">
+          <div className="col-10 col-md-5 mb-3">
+            <p className={`${tropicalOrange.className} fs-1 text-center`}>
+              Live a unique and transformative experience, blending the <br />{" "}
+              <span className="tx-main-color tx-main-color">
+              ADRENALINE of catching waves with the serenity of yoga
+              </span>
+            </p>
+          </div>
+          <div className="col-10 col-md-5 mb-3">
+            <p className="fw-light fs-5 text-center text-md-start">
+              Welcome to Pure Blue Retreat in the Maldives, where the magic of
+              surfing and yoga awaits! Immerse yourself in thrilling waves and
+              relaxing yoga sessions on our pristine shores. Our comfy rooms and
+              delicious local cuisine add a touch of luxury to your escape. Pure
+              Blue is all about the perfect blend of excitement and serenity –
+              join us for an easygoing retreat in this tropical paradise!
+            </p>
+          </div>
+        </div>
+      </div>
+      {/* video section */}
+      <div className="container mb-3 mb-3">
+        <div className="row align-items-center justify-content-around">
+          <div className="col-10 col-md-6 mb-3 text-center">
+            <p className='display-5'>
+              INSERT VIDEO
+            </p>
+          </div>
+          <div className="col-10 col-md-6 mb-3 text-center">
+            <div className="row">
+              <div className="col-6 mb-3">
+                <div className="card w-75 text-center border-0 d-block mx-auto mb-3">
+                  <Image
+                    alt="surf icon"
+                    src={surfing}
+                    placeholder="blur"
+                    className="d-block mx-auto mb-3"
+                  />
+                  <p className="spacing tx-main-color p-0 m-0">SURFING</p>
+                  <p className="p-0 m-0">All kinds of waves</p>
+                </div>
+              </div>
+              <div className="col-6 mb-3">
+                <div className="card w-75 text-center border-0 d-block mx-auto mb-3">
+                  <Image
+                    alt="goodvibe icon"
+                    src={goodvibe}
+                    placeholder="blur"
+                    className="d-block mx-auto mb-3"
+                  />
+                  <p className="spacing tx-main-color p-0 m-0">VIBES</p>
+                  <p className="p-0 m-0">only good vibes</p>
+                </div>
+              </div>
+              <div className="col-6 mb-3">
+                <div className="card w-75 text-center border-0 d-block mx-auto mb-3">
+                  <Image
+                    alt="season icon"
+                    src={season}
+                    placeholder="blur"
+                    className="d-block mx-auto mb-3"
+                  />
+                  <p className="spacing tx-main-color p-0 m-0">SEASON</p>
+                  <p className="p-0 m-0">May - January</p>
+                </div>
+              </div>
+              <div className="col-6 mb-3">
+                <div className="card w-75 text-center border-0 d-block mx-auto mb-3 py-md-3">
+                  <Image
+                    alt="packages icon"
+                    src={packages}
+                    placeholder="blur"
+                    className="d-block mx-auto mb-3"
+                  />
+                  <p className="spacing tx-main-color p-0 m-0">PACKAGES</p>
+                  <p className="p-0 m-0">Starting from 700€</p>
+                </div>
+              </div>
+            </div>
+            <button className="btn-book text-uppercase fw-bold">
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
