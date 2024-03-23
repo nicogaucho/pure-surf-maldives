@@ -1,12 +1,33 @@
-import Image from 'next/image'
+'use client'
+
+import { useEffect, useState } from 'react';
+import Image from 'next/image';
 import { tropicalOrange } from "@/fonts/fonts";
 import purelogoURL from "../../public/pure-surf-logo-white.png";
 
 export default function Navbar() {
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <nav
-        className="navbar navbar-expand-lg bg-nav-custom fixed-top p-3"
+        className={`navbar navbar-expand-lg fixed-top p-3 ${scrolling ? "bg-nav-custom-scroll" : "bg-nav-custom"}`}
         aria-label="Thirteenth navbar example"
       >
         <div className="container-fluid">

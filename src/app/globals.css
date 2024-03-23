@@ -17,20 +17,18 @@ body {
   color: var(--sec-color) !important;
 }
 
-.bg-nav-custom {
-  background: linear-gradient(var(--primary-color), transparent);
-}
-
 .spacing {
   letter-spacing: 4px;
 }
 
-.nav-link:hover {
-  color: var(--sec-color) !important;
+.bg-nav-custom {
+  transition: 0.4s;
+  background: linear-gradient(var(--sec-color), transparent);
 }
 
-#book-nav:hover {
-  color: var(--sec-color) !important;
+.bg-nav-custom-scroll {
+  transition: 0.4s;
+  background-color  : var(--sec-color) !important;
 }
 
 .carousel-indicators [data-bs-target] {

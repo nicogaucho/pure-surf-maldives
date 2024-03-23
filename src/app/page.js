@@ -309,7 +309,7 @@ export default function Home() {
                   <div className="row justify-content-center">
                     <div className="col-12 col-md-8 text-center">
                       <div className="card-body">
-                        <blockquote className={`blockquote mb-0 ${tropicalOrange.className} fs-2 text-white`}>
+                        <blockquote className={`blockquote mb-0 ${tropicalOrange.className} fs-2 text-white `}>
                           <p>
                             “SURFING IN MALDIVES WAS ALWAYS MY DREAM AND DOING IT
                             WHILE AT PURE BLUE WAS JUST PERFECT FOR ME! THE LOCATION,
