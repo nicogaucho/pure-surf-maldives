@@ -1,6 +1,6 @@
 // import { Suspense } from 'react';
 import Image from "next/image";
-import styles from "@/styles/header.module.css";
+import styles from "@/styles/page.module.css";
 import Navbar from "@/components/Navbar";
 import { tropicalOrange } from "@/fonts/fonts";
 import surfing from "../../public/surfing.png";
@@ -10,6 +10,10 @@ import season from "../../public/season.png";
 import firststepURL from "../../public/firststep.jpg";
 import improvementURL from "../../public/improvement.jpg";
 import freespiritURL from "../../public/freespirit.jpg";
+import facilitiesURL from "../../public/facilities.jpg";
+import roomsURL from "../../public/room.jpg";
+import foodURL from "../../public/food.jpg";
+import yogacoursesURL from "../../public/yogacourses.jpg"; 
 // import VideoComponent from '../components/VideoComponent';
 
 export default function Home() {
@@ -325,6 +329,148 @@ export default function Home() {
                   </div>
                 </div>
           </div>
+      </div>
+      {/* surf courses section */}
+      <div className={`container-fluid ${styles.bgsurfcourses}`}>
+        <div className="row">
+          <div className="p-md-5">
+            <div className="container py-5">
+              <p className="fw-bold tx-sec-color spacing">SURF COURSES</p>
+              <p className={`${tropicalOrange.className} text-white display-3`}>
+                Explore perfect waves
+              </p>
+              <p className="col-8 col-md-4 text-white">
+                Maldives are now getting famous for their world class waves: the gift that the wildest nature offers us is just waiting for you to put a wetsuit on and jump on your board!
+              </p>
+                <button className="btn-book text-uppercase fw-bold">
+                  Read more
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+       {/* accomodation section */}
+       <main>
+        <section className="py-3 text-center container">
+          <div className="row py-lg-5">
+            <div className="col-10 col-md-8 mx-auto">
+              <p className="lead tx-main-color spacing">ACCOMODATION</p>
+              <p className={`display-4 fw-light ${tropicalOrange.className}`}>
+                OUR RETREAT IN THE HEART OF THE OCEAN
+              </p>
+              <p>
+                Maldives start to be world famous for his world class waves.
+                During the season, from march to November the pure nature of
+                Maldives gives us constant and all level waves for us to enjoy,
+                scored, mastered.
+              </p>
+            </div>
+          </div>
+        </section>
+        <div className="album py-5 bg-body-tertiary">
+          <div className="container">
+            <div className="row mb-5">
+              <div className="col-12 col-md-4 mb-3">
+                <div
+                  className="card d-block mx-auto rounded-0 border-0 shadow-sm"
+                  style={{ width: "23rem", height: "25rem" }}
+                > 
+                  <Image
+                    alt="rooms"
+                    src={roomsURL}
+                    placeholder="blur"
+                    height={250}
+                    className="card-img-top rounded-0"
+                  />
+                  <div className="card-body text-center">
+                    <p className={`fs-2 ${tropicalOrange.className}`}>Rooms</p>
+                    <p className="card-text">
+                    Your calm and relaxing space facing the Ocean: Noah Beach Lodge
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-4 mb-3">
+                <div
+                  className="card d-block mx-auto rounded-0 border-0 shadow-sm"
+                  style={{ width: "23rem", height: "25rem" }}
+                > 
+                  <Image
+                    alt="facilities"
+                    src={facilitiesURL}
+                    placeholder="blur"
+                    height={250}
+                    className="card-img-top rounded-0"
+                  />
+                  <div className="card-body text-center">
+                    <p className={`fs-2 ${tropicalOrange.className}`}>Facilities</p>
+                    <p className="card-text">
+                    Your calm and relaxing space facing the Ocean: Noah Beach Lodge
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-4 mb-3">
+                <div
+                  className="card d-block mx-auto rounded-0 border-0 shadow-sm"
+                  style={{ width: "23rem", height: "25rem" }}
+                >
+                  <Image
+                    alt="food"
+                    src={foodURL}
+                    placeholder="blur"
+                    height={250}
+                    className="card-img-top rounded-0"
+                  />
+                  <div className="card-body text-center">
+                    <p className={`fs-2 ${tropicalOrange.className}`}>Food</p>
+                    <p className="card-text">
+                    Your calm and relaxing space facing the Ocean: Noah Beach Lodge
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="row mb-5">
+              <div className="col-12 text-center">
+                  <button className="btn-book text-uppercase fw-bold">
+                    MORE INFO
+                  </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      {/* yoga section */}
+      <div className="container my-5 py-5">
+        <div className="row align-items-center justify-content-around">
+          <div className="col-12 col-md-5 mb-3">
+            <Image
+                    alt="yoga classes"
+                    src={yogacoursesURL}
+                    placeholder="blur"
+                    className="img-fluid"
+                  />
+          </div>
+          <div className="col-12 col-md-5 mb-3">
+            <p className="lead tx-main-color spacing text-center">YOGA</p>
+            <p className={`display-4 fw-bold ${tropicalOrange.className}`}>
+              Discover, LEARN, EXPLORE
+            </p>
+            <p>
+            Try yoga at Pure Blue Surf & Yoga Retreat in the Maldives. Our yoga classes are led by experts and are great for everyone, no matter if you&apos;re new to yoga or have done it before. It&apos;s a peaceful way to enjoy your time here.
+            </p>
+            <p className="fw-bold">How it works</p>
+            <ul>
+              <li>2 classes a day</li>
+              <li>Hatha yoga and Yin</li>
+              <li>Certified teacher</li>
+            </ul>
+              <button className="btn-book text-uppercase fw-bold mt-3">
+                MORE INFO
+              </button>
+          </div>
+        </div>
       </div>
     </>
   );
