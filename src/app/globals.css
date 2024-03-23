@@ -93,4 +93,8 @@ body {
   background-color: var(--sec-color);
 }
 
+.bg-main-color {
+  background-color: var(--primary-color) !important;
+}
+
 

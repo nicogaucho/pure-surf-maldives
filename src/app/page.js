@@ -1,4 +1,4 @@
-import { Suspense } from 'react';
+// import { Suspense } from 'react';
 import Image from "next/image";
 import styles from "@/styles/header.module.css";
 import Navbar from "@/components/Navbar";
@@ -7,7 +7,10 @@ import surfing from "../../public/surfing.png";
 import goodvibe from "../../public/goodvibe.png";
 import packages from "../../public/packages.png";
 import season from "../../public/season.png";
-import VideoComponent from '../components/VideoComponent';
+import firststepURL from "../../public/firststep.jpg";
+import improvementURL from "../../public/improvement.jpg";
+import freespiritURL from "../../public/freespirit.jpg";
+// import VideoComponent from '../components/VideoComponent';
 
 export default function Home() {
   return (
@@ -204,6 +207,124 @@ export default function Home() {
             </button>
           </div>
         </div>
+      </div>
+      {/* cards packages */}
+      <main>
+        <section className="py-3 text-center container">
+          <div className="row py-lg-5">
+            <div className="col-10 col-md-8 mx-auto">
+              <p className="lead tx-main-color spacing">PACKAGES</p>
+              <p className={`display-4 fw-light ${tropicalOrange.className}`}>
+                EXPERIENCE THE BEST OF MALDIVES
+              </p>
+              <p>
+              Design for all levels and budget ... <span className="fw-bold tx-main-color">Pure Blue Surf & Yoga retreat</span> provide you the perfect packages for all surfers . Eat, surf, relaxe, Repeat is our Anthem
+              </p>
+            </div>
+          </div>
+        </section>
+        <div className="album py-5 bg-body-tertiary">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 col-md-4 mb-3">
+                <div className="card text-bg-dark border-0 rounded-0 text-center" style={{ height: '22rem', overflow: "hidden"}}>
+                  <Image
+                    alt="first step package"
+                    src={firststepURL}
+                    placeholder="blur"
+                    className="card-img opacity-50"
+                  />
+                  <div className="card-img-overlay d-flex justify-content-center align-items-end">
+                    <div>
+                      <h5 className={`card-title ${tropicalOrange.className} h1`}>FIRST STEP</h5>
+                      <p className="card-text fw-bold">
+                        STARTING FROM 790€ / WEEK
+                      </p>
+                        <button className="btn-book text-uppercase fw-bold">
+                          Info&book
+                        </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-4 mb-3">
+                <div className="card text-bg-dark border-0 rounded-0 text-center" style={{ height: '22rem', overflow: "hidden"}}>
+                  <Image
+                    alt="improvement package"
+                    src={improvementURL}
+                    placeholder="blur"
+                    className="card-img opacity-50"
+                  />
+                  <div className="card-img-overlay d-flex justify-content-center align-items-end">
+                    <div>
+                      <h5 className={`card-title ${tropicalOrange.className} h1`}>IMPROVEMENT</h5>
+                      <p className="card-text fw-bold">
+                        STARTING FROM 690€ / WEEK
+                      </p>
+                      <button className="btn-book text-uppercase fw-bold">
+                        Info&book
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-4 mb-3">
+                <div className="card text-bg-dark border-0 rounded-0 text-center" style={{ height: '22rem', overflow: "hidden"}}>
+                  <Image
+                    alt="free spirit package"
+                    src={freespiritURL}
+                    placeholder="blur"
+                    className="card-img opacity-50"
+                  />
+                  <div className="card-img-overlay d-flex justify-content-center align-items-end">
+                    <div>
+                      <h5 className={`card-title ${tropicalOrange.className} h1`}>Free spirit</h5>
+                      <p className="card-text fw-bold"> 
+                        STARTING FROM 590€ / WEEK
+                      </p>
+                      <button className="btn-book text-uppercase fw-bold">
+                        Info&book
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      {/* what customers */}
+      <div className="container my-5 py-3">
+        <div className="row">
+          <div className="col-12 text-center">
+            <p className="h3 text-uppercase tx-main-color spacing">
+              What customers say
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="row justify-content-center">
+          <div className="col-12 col-md-12">
+                <div className="card bg-main-color border-0 rounded-0 py-5">
+                  <div className="row justify-content-center">
+                    <div className="col-12 col-md-8 text-center">
+                      <div className="card-body">
+                        <blockquote className={`blockquote mb-0 ${tropicalOrange.className} fs-2 text-white`}>
+                          <p>
+                            “SURFING IN MALDIVES WAS ALWAYS MY DREAM AND DOING IT
+                            WHILE AT PURE BLUE WAS JUST PERFECT FOR ME! THE LOCATION,
+                            THE STAFF AND THE SERVICE WERE JUST PERFECT”.
+                          </p>
+                          <footer className="blockquote-footer  mt-3 text-white">
+                            Jacopo{" "}
+                            <cite title="Source Title">from google reviews</cite>
+                          </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
       </div>
     </>
   );
