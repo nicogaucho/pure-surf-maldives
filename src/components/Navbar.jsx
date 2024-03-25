@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import { tropicalOrange } from "@/fonts/fonts";
 import purelogoURL from "../../public/pure-surf-logo-white.png";
@@ -56,29 +57,34 @@ export default function Navbar() {
             </a>
             <ul className="navbar-nav col-lg-8 justify-content-lg-center">
               <li className="nav-item mx-md-3 text-white">
-                <a className="nav-link text-reset fw-bold tx-orange" href="/surfcourses">
-                  SURFING
-                </a>
-              </li>
-              <li className="nav-item mx-md-3 text-white">
-                <a className="nav-link text-reset fw-bold tx-orange" href="/yogacourses">
-                  YOGA
-                </a>
-              </li>
-              <li className="nav-item mx-md-3 text-white">
-                <a className="nav-link text-reset fw-bold tx-orange" href="/activites">
-                  ACTIVITIES
-                </a>
-              </li>
-              <li className="nav-item mx-md-3 text-white">
-                <a className="nav-link text-reset fw-bold tx-orange" href="/packages">
+                <Link className="nav-link text-reset fw-bold tx-orange" href="#packages-section">
                   PACKAGES
-                </a>
+                </Link>
               </li>
               <li className="nav-item mx-md-3 text-white">
-                <a className="nav-link text-reset fw-bold tx-orange" href="/accomodations">
+                <Link className="nav-link text-reset fw-bold tx-orange" href="#surfing-section">
+                  SURFING
+                </Link>
+              </li>
+              <li className="nav-item mx-md-3 text-white">
+                <Link className="nav-link text-reset fw-bold tx-orange" href="#accomodations-section">
                   ACCOMMODATIONS
-                </a>
+                </Link>
+              </li>
+              <li className="nav-item mx-md-3 text-white">
+                <Link className="nav-link text-reset fw-bold tx-orange" href="#yoga-section">
+                  YOGA
+                </Link>
+              </li>
+              <li className="nav-item mx-md-3 text-white">
+                <Link className="nav-link text-reset fw-bold tx-orange" href="#activities-section">
+                  ACTIVITIES
+                </Link>
+              </li>
+              <li className="nav-item mx-md-3 text-white">
+                <Link className="nav-link text-reset fw-bold tx-orange" href="#contacts-section">
+                  CONTACTS
+                </Link>
               </li>
             </ul>
             <div className="d-lg-flex col-lg-2 justify-content-lg-end">
@@ -104,29 +110,34 @@ export default function Navbar() {
         <div className="offcanvas-body">
         <ul className="navbar-nav col-lg-8 justify-content-lg-center">
               <li className="nav-item mx-md-3 my-2 text-white">
-                <a className="nav-link text-reset fs-4 fw-bold tx-orange" href="/surfcourses">
+                <Link className="nav-link text-reset fw-bold tx-orange" href="#surfing-section">
                   SURFING
-                </a>
+                </Link>
               </li>
               <li className="nav-item mx-md-3 my-2 text-white">
-                <a className="nav-link text-reset fs-4 fw-bold tx-orange" href="/yogacourses">
+              <Link className="nav-link text-reset fw-bold tx-orange" href="#yoga-section">
                   YOGA
-                </a>
+                </Link>
               </li>
               <li className="nav-item mx-md-3 my-2 text-white">
-                <a className="nav-link text-reset fs-4 fw-bold tx-orange" href="/activites">
+                <Link className="nav-link text-reset fw-bold tx-orange" href="#activities-section">
                   ACTIVITIES
-                </a>
+                </Link>
               </li>
               <li className="nav-item mx-md-3 my-2 text-white">
-                <a className="nav-link text-reset fs-4 fw-bold tx-orange" href="/packages">
+              <Link className="nav-link text-reset fw-bold tx-orange" href="#packages-section">
                   PACKAGES
-                </a>
+                </Link>
               </li>
               <li className="nav-item mx-md-3 my-2 text-white">
-                <a className="nav-link text-reset fs-4 fw-bold tx-orange" href="/accomodations">
+                <Link className="nav-link text-reset fw-bold tx-orange" href="#accomodations-section">
                   ACCOMMODATIONS
-                </a>
+                </Link>
+              </li>
+              <li className="nav-item mx-md-3 my-2 text-white">
+                <Link className="nav-link text-reset fw-bold tx-orange" href="#contacts-section">
+                  CONTACTS
+                </Link>
               </li>
             </ul>
             <div className="d-lg-flex col-lg-2 justify-content-lg-end my-2">

@@ -27,7 +27,7 @@ export default function FormContact() {
   }
 
   return (
-    <div className="container-fluid my-5">
+    <div id="contacts-section" className="container-fluid my-5">
       <div className="row justify-content-center align-items-center">
         <div className="col-12 col-xl-10">
           <div className="card border-0 overflow-hidden">

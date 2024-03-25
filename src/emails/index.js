@@ -30,9 +30,9 @@ export const pureSurfContactEmail = ({
             alt="pure surf logo"
           />
           <Section>
-            <Text style={text}>Hi Pure Blue Maldives,</Text>
+            <Text style={text}>Hi Pure Blue Surf&Yoga retreat Maldives,</Text>
             <Text style={text}>
-              Someone recently requested staying in Pure Blue Yoga&Surf retreat Maldives.
+              Someone recently requested staying in Pure Blue Surf&Yoga retreat Maldives.
             </Text>
             <Text style={text}>
               Find the contact right below:

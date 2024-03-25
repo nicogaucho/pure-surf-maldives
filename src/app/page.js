@@ -1,5 +1,5 @@
-// import { Suspense } from 'react';
 import Image from "next/image";
+import Link from 'next/link';
 import styles from "@/styles/page.module.css";
 import Navbar from "@/components/Navbar";
 import FormContact from "@/components/FormContact";
@@ -21,9 +21,6 @@ import yogacoursesURL from "../../public/yogacourses.jpg";
 import skatingURL from "../../public/skating.jpg";
 import snorkelingURL from "../../public/snorkeling.jpeg";
 import jetskyURL from "../../public/jetsky.jpg"; 
-
-// import VideoComponent from '../components/VideoComponent';
-
 
 export default function Home() {
   return (
@@ -160,9 +157,7 @@ export default function Home() {
       <div className="container mb-3 mb-3">
         <div className="row align-items-center justify-content-around">
           <div className="col-10 col-md-6 mb-3 text-center">
-            <p className='display-5'>
-              INSERT VIDEO
-            </p>
+            <video className="img-fluid" src={require('../../public/maldives.mp4')} controls autoPlay />
           </div>
           <div className="col-10 col-md-6 mb-3 text-center">
             <div className="row">
@@ -222,7 +217,7 @@ export default function Home() {
         </div>
       </div>
       {/* cards packages */}
-      <main>
+      <main id="packages-section">
         <section className="py-3 text-center container">
           <div className="row py-lg-5">
             <div className="col-10 col-md-8 mx-auto">
@@ -253,9 +248,11 @@ export default function Home() {
                       <p className="card-text fw-bold">
                         STARTING FROM 790€ / WEEK
                       </p>
+                      <Link href="/packages">
                         <button className="btn-book text-uppercase fw-bold">
                           Info&book
                         </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -274,9 +271,11 @@ export default function Home() {
                       <p className="card-text fw-bold">
                         STARTING FROM 690€ / WEEK
                       </p>
-                      <button className="btn-book text-uppercase fw-bold">
-                        Info&book
-                      </button>
+                      <Link href="/packages">
+                        <button className="btn-book text-uppercase fw-bold">
+                          Info&book
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -295,9 +294,11 @@ export default function Home() {
                       <p className="card-text fw-bold"> 
                         STARTING FROM 590€ / WEEK
                       </p>
-                      <button className="btn-book text-uppercase fw-bold">
-                        Info&book
-                      </button>
+                      <Link href="/packages">
+                        <button className="btn-book text-uppercase fw-bold">
+                          Info&book
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -340,7 +341,7 @@ export default function Home() {
           </div>
       </div>
       {/* surf courses section */}
-      <div className={`container-fluid ${styles.bgsurfcourses}`}>
+      <div id="surfing-section" className={`container-fluid ${styles.bgsurfcourses}`}>
         <div className="row">
           <div className="p-md-5">
             <div className="container py-5">
@@ -351,15 +352,17 @@ export default function Home() {
               <p className="col-8 col-md-4 text-white">
                 Maldives are now getting famous for their world class waves: the gift that the wildest nature offers us is just waiting for you to put a wetsuit on and jump on your board!
               </p>
+              <Link href="/surf">
                 <button className="btn-book text-uppercase fw-bold">
                   Read more
                 </button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
        {/* accomodation section */}
-       <main>
+      <main id="accomodations-section">
         <section className="py-3 text-center container">
           <div className="row py-lg-5">
             <div className="col-10 col-md-8 mx-auto">
@@ -442,16 +445,18 @@ export default function Home() {
             </div>
             <div className="row mb-5">
               <div className="col-12 text-center">
+                <Link href="/accomodation">
                   <button className="btn-book text-uppercase fw-bold">
                     MORE INFO
                   </button>
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </main>
       {/* yoga section */}
-      <div className="container my-5 py-5">
+      <div id="yoga-section" className="container my-5 py-5">
         <div className="row align-items-center justify-content-around">
           <div className="col-12 col-md-5 mb-3">
             <Image
@@ -475,14 +480,16 @@ export default function Home() {
               <li>Hatha yoga and Yin</li>
               <li>Certified teacher</li>
             </ul>
-              <button className="btn-book text-uppercase fw-bold mt-3">
-                MORE INFO
-              </button>
+              <Link href="/yoga">
+                <button className="btn-book text-uppercase fw-bold mt-3">
+                  MORE INFO
+                </button>
+              </Link>
           </div>
         </div>
       </div>
       {/* activities section */}
-      <section className="py-3 text-center container">
+      <section id="activities-section" className="py-3 text-center container">
           <div className="row py-lg-5">
             <div className="col-10 col-md-8 mx-auto">
               <p className="lead tx-main-color spacing">ACTIVITIES</p>
@@ -561,9 +568,11 @@ export default function Home() {
             </div>
             <div className="row mb-5">
               <div className="col-12 text-center">
+                <Link href="/activities">
                   <button className="btn-book text-uppercase fw-bold">
                     SEE ALL ACTIVITIES
                   </button>
+                </Link>
               </div>
             </div>
           </div>
