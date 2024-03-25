@@ -2,11 +2,15 @@
 import Image from "next/image";
 import styles from "@/styles/page.module.css";
 import Navbar from "@/components/Navbar";
+import FormContact from "@/components/FormContact";
+import Footer from '@/components/Footer';
 import { tropicalOrange } from "@/fonts/fonts";
 import surfing from "../../public/surfing.png";
 import goodvibe from "../../public/goodvibe.png";
 import packages from "../../public/packages.png";
 import season from "../../public/season.png";
+import cancellation from "../../public/cancellation.png";
+import globe from "../../public/global.png";
 import firststepURL from "../../public/firststep.jpg";
 import improvementURL from "../../public/improvement.jpg";
 import freespiritURL from "../../public/freespirit.jpg";
@@ -14,7 +18,12 @@ import facilitiesURL from "../../public/facilities.jpg";
 import roomsURL from "../../public/room.jpg";
 import foodURL from "../../public/food.jpg";
 import yogacoursesURL from "../../public/yogacourses.jpg"; 
+import skatingURL from "../../public/skating.jpg";
+import snorkelingURL from "../../public/snorkeling.jpeg";
+import jetskyURL from "../../public/jetsky.jpg"; 
+
 // import VideoComponent from '../components/VideoComponent';
+
 
 export default function Home() {
   return (
@@ -66,15 +75,15 @@ export default function Home() {
             <div className={`carousel-item active ${styles.firstslide}`}>
               <div className="carousel-caption caption-animated">
                 <p className="fw-light m-0 p-0">Follow on our social network</p>
-                <i className="bi bi-facebook mx-2 text-secondary"></i>
-                <i className="bi bi-instagram mx-2 text-secondary"></i>
-                <i className="bi bi-twitter mx-2 text-secondary"></i>
+                <i className="bi bi-facebook mx-2 tx-main-color"></i>
+                <i className="bi bi-instagram mx-2 tx-main-color"></i>
+                <i className="bi bi-twitter mx-2 tx-main-color"></i>
               </div>
             </div>
             <div className={`carousel-item ${styles.secondslide}`}>
               <div className="carousel-caption caption-animated">
                 <p className="fw-light m-0 p-0">Direct booking</p>
-                <p className="text-secondary small">
+                <p className="tx-main-color small">
                   Book your stay and more activities directly from here, scroll to see more
                 </p>
               </div>
@@ -84,7 +93,7 @@ export default function Home() {
                 <p className="fw-light m-0 p-0">
                   Discoved the perfection of Maldives
                 </p>
-                <p className="text-secondary small">
+                <p className="tx-main-color small">
                   Get how we offer yoga retreat, surf and more activites and all kinds of
                   packages
                 </p>
@@ -472,6 +481,165 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* activities section */}
+      <section className="py-3 text-center container">
+          <div className="row py-lg-5">
+            <div className="col-10 col-md-8 mx-auto">
+              <p className="lead tx-main-color spacing">ACTIVITIES</p>
+              <p className={`display-4 fw-light text-uppercase ${tropicalOrange.className}`}>
+                Join the NOAH Adventure club
+              </p>
+              <p>
+              We have lots of fun things you can do at Pure Blue. From snorkeling to jet skiing, there&apos;s something for everyone. Explore all the shades of blue with all the activities of the Noah Adventure club
+              </p>
+            </div>
+          </div>
+      </section>
+      <div className="album py-5 bg-body-tertiary">
+          <div className="container">
+            <div className="row mb-5">
+              <div className="col-12 col-md-4 mb-3">
+                <div className="card text-bg-dark border-0 rounded-0 text-center">
+                  <Image
+                    alt="yoga classes"
+                    src={skatingURL}
+                    placeholder="blur"
+                    style={{
+                      width: "auto",
+                      height: "auto"
+                    }}
+                    className="card-img opacity-50"
+                  />
+                  <div className="card-img-overlay d-flex justify-content-center align-items-end">
+                    <div>
+                      <h5 className={`card-title h1 ${tropicalOrange.className}`}>ADDS-ON</h5>
+                      <p className="card-text fs-1">Surf Skate</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-4 mb-3">
+                <div className="card text-bg-dark border-0 rounded-0 text-center">
+                  <Image
+                    alt="yoga classes"
+                    src={snorkelingURL}
+                    placeholder="blur"
+                    style={{
+                      width: "auto",
+                      height: "auto"
+                    }}
+                    className="card-img opacity-50"
+                  />
+                  <div className="card-img-overlay d-flex justify-content-center align-items-end">
+                    <div>
+                      <h5 className={`card-title h1 ${tropicalOrange.className}`}>Free activity</h5>
+                      <p className="card-text fs-1">Snorkelling</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-4 mb-3">
+                <div className="card text-bg-dark border-0 rounded-0 text-center">
+                  <Image
+                    alt="yoga classes"
+                    src={jetskyURL}
+                    placeholder="blur"
+                    style={{
+                      width: "auto",
+                      height: "auto"
+                    }}
+                    className="card-img opacity-50"
+                  />
+                  <div className="card-img-overlay d-flex justify-content-center align-items-end">
+                    <div>
+                      <h5 className={`card-title h1 ${tropicalOrange.className}`}>ADDS-ON</h5>
+                      <p className="card-text fs-1">Jet Ski</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="row mb-5">
+              <div className="col-12 text-center">
+                  <button className="btn-book text-uppercase fw-bold">
+                    SEE ALL ACTIVITIES
+                  </button>
+              </div>
+            </div>
+          </div>
+      </div>
+      {/* about us section */}
+      <div>
+        <section className="py-3 text-center container">
+          <div className="row py-lg-5">
+            <div className="col-10 col-md-8 mx-auto">
+              <p className="lead tx-main-color spacing">ABOUT US</p>
+              <p className={`display-4 fw-light text-uppercase ${tropicalOrange.className}`}>
+                Passionate about the sea
+              </p>
+              <p>
+                Pure Blue surf&yoga retreat and Noah Beach lodge are a young association getting along for the same purpose: giive and a marvelous and affordable trues experiences of surfing 
+              </p>
+            </div>
+          </div>
+        </section>
+        <div className="album py-5 bg-body-tertiary">
+          <div className="container">
+            <div className="row mb-5">
+              <div className="col-12 col-md-6 mb-3">
+                <p className='fw-bold tx-main-color'>What’s a vacation if not the only chance to make a dream something real, that you can feel through your skin, eyes and every sense?</p>
+                <p>The Maldives are one of those few places on our beautiful blue planet that has that dreamy aura that makes you doubt they actually exist outside of commercials and medias: colors that not even our wildest imagination can picture, smells of spices and infinite flavours of tropical fruit.
+                </p>
+                <p> “Maldives” can be defined as the quintessential paradise, an antonomasia that entered our vocabulary to describe that unreachable place of perfection and dream.</p>
+                <p className='text-uppercase tx-main-color'>Pure Blue Surf is the step that makes it available and real for you</p>
+                <p>And, as if that wasn’t enough, on top of that we offer one of the most beloved and connected-to-nature sport that is becoming a global trend: surfing.
+                </p>
+                <p>Three surf spots, reachable by boat, that will make your holiday an unstoppable symphony of amusement, emotions and discover.</p>
+              </div>
+              <div className="col-12 col-md-6 mb-3">
+              <p className='tx-main-color'>Our body and our mind, though, also need a moment of stillness, and swimming among our colourful scaled friends that inhabit the pristine waters of the archipelago, is probably the best place to search and find that inner peace.
+              </p>
+                <p className='tx-main-color'>And again, something else that makes Pure Blue Surf the perfect destination for this “real life dream” is that it’s located on a small local island, because we make of sustainability our core value, because we believe in giving back as much as we can to the local population, as they offer to us all of these amazing features that enrich our experience.
+
+                </p>
+                <p> When we say reachable, we mean it not just in a metaphorical sense, but also in the most practical way: reaching our corner of paradise from the International Airport of Malè couldn’t be easier, thanks to the renewed connections</p>
+                <p className=''>When you’re discovering Asia, the continent that is the cradle of civilization, with the wildest nature and sea wildlife, you can’t miss out on Maldives: this archipelago is waiting for you and it’s just one step away, at Pure Blue Surf.</p>
+              </div>
+            </div>
+            <div className="row mb-5">
+              <div className="col-12 col-md-4 mb-3 text-center">
+                <Image 
+                  src={cancellation}
+                  placeholder="blur"
+                  width={50}
+                  alt="good vibe icon"
+                />
+                <span className='ms-3'>14 day free cancellation & free rebooking</span>
+              </div>  
+              <div className="col-12 col-md-4 mb-3 text-center">
+                <Image 
+                  src={goodvibe}
+                  placeholder="blur"
+                  width={50}
+                  alt="good vibe icon"
+                />
+                <span className='ms-3'>Good vibe only</span>
+              </div>
+              <div className="col-12 col-md-4 mb-3 text-center">
+                <Image 
+                  src={globe}
+                  placeholder="blur"
+                  width={50}
+                  alt="good vibe icon"
+                />
+                <span className='ms-3'>Global team / great quality</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <FormContact />
+      <Footer />
     </>
   );
 }

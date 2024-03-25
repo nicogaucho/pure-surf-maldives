@@ -95,4 +95,9 @@ body {
   background-color: var(--primary-color) !important;
 }
 
+.bg-footer {
+  /* background: linear-gradient(transparent, var(--sec-color)) !important; */
+  background-color: var(--sec-color);
+}
+
 
