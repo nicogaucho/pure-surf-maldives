@@ -100,4 +100,10 @@ body {
   background-color: var(--sec-color);
 }
 
+.table > :not(caption) > * > * {
+  width: 100px;
+  height: 50px;
+}
+
+
 

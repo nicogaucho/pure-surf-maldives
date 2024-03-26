@@ -89,11 +89,12 @@ export default function FormContact() {
                           aria-label="Floating label select example"
                           {...register("plans")}
                         >
-                          <option value="First step">First step plan</option>
-                          <option value="Improvement">Improvement plan</option>
-                          <option value="Free spirit">Free spirit plan</option>
+                          <option value="Packages">Packages</option>
+                          <option value="Reservation">Reservation</option>
+                          <option value="Work with us">Work with us</option>
+                          <option value="others">Other...</option>
                         </select>
-                        <label htmlFor="plans">Which plan are you interested to?</label>
+                        <label htmlFor="plans">What would you like to know?</label>
                     </div>
                     <div className="form-floating mb-3">
                       <textarea 

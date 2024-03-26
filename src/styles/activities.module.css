@@ -1,0 +1,30 @@
+.centerheroaactivities {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../public/jetskyhero.jpg');
+  background-position: 0% 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cardaactivities1 {
+  height: 300px;
+  background: url('../../public/kayaking.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cardaactivities2 {
+  height: 300px;
+  background: url('../../public/yoga6.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cardaactivities3 {
+  height: 300px;
+  background: url('../assets/Hero2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
