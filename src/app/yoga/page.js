@@ -2,7 +2,6 @@ import Image from "next/image";
 import { tropicalOrange } from "@/fonts/fonts";
 import style from "../../styles/yoga.module.css";
 import pureSurfLogoWhite from "../../../public/pure-surf-logo-white.png";
-// import yoga1 from "../../../public/yoga1.jpg";
 import yoga2 from "../../../public/yoga2.jpg";
 import yoga3 from "../../../public/yoga3.jpg";
 import yoga4 from "../../../public/yoga4.jpg";
