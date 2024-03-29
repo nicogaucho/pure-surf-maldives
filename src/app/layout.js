@@ -6,7 +6,6 @@ import "./globals.css";
 export const metadata = {
   title: "Pure Blue Surf & Yoga retreat Maldives",
   description: "Pure Blue Surf & Yoga retreat provide you the perfect packages for all surfers. Our comfy rooms and delicious local cuisine add a touch of luxury to your escape",
-  
 };
 
 export default function RootLayout({ children }) {
