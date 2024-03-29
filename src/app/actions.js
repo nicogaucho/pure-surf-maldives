@@ -9,7 +9,7 @@ export async function sendEmail(data) {
   try {
     const result = await resend.emails.send({
       from: 'Pure Blue Surf&Yoga retreat Maldives <onboarding@resend.dev>',
-      to: ['nicola.gasp11@gmail.com'],
+      to: ['info.pureblue@pureblueretreat.com'],
       subject: 'Pure Blue Surf&Yoga retreat Maldives Customer Contact Received',
       react: pureSurfContactEmail({ name, email, plans, message }),
     });

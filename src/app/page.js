@@ -578,7 +578,7 @@ export default function Home() {
           </div>
       </div>
       {/* about us section */}
-      <div>
+      <div id="about-section">
         <section className="py-3 text-center container">
           <div className="row py-lg-5">
             <div className="col-10 col-md-8 mx-auto">

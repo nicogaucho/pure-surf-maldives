@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import { tropicalOrange } from "@/fonts/fonts";
 import purelogoURL from "../../public/pure-surf-logo-white.png";
 
@@ -18,32 +18,34 @@ export default function Navbar() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
     <>
       <nav
-        className={`navbar navbar-expand-lg fixed-top p-3 ${scrolling ? "bg-nav-custom-scroll" : "bg-nav-custom"}`}
+        className={`navbar navbar-expand-lg fixed-top p-3 ${
+          scrolling ? "bg-nav-custom-scroll" : "bg-nav-custom"
+        }`}
         aria-label="Thirteenth navbar example"
       >
         <div className="container-fluid">
           <button
             className="navbar-toggler border-0"
             type="button"
-            data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <i class="bi bi-list display-3 text-white"></i>
           </button>
-          <div
-            className="collapse navbar-collapse d-lg-flex"
-          >
+          <div className="collapse navbar-collapse d-lg-flex">
             <a
               className="navbar-brand me-0 d-none d-md-block col-lg-2"
               href="#"
@@ -57,38 +59,59 @@ export default function Navbar() {
             </a>
             <ul className="navbar-nav col-lg-8 justify-content-lg-center">
               <li className="nav-item mx-md-3 text-white">
-                <Link className="nav-link text-reset fw-bold tx-orange" href="#packages-section">
+                <Link
+                  className="nav-link text-reset fw-bold tx-orange"
+                  href="#packages-section"
+                >
                   PACKAGES
                 </Link>
               </li>
               <li className="nav-item mx-md-3 text-white">
-                <Link className="nav-link text-reset fw-bold tx-orange" href="#surfing-section">
+                <Link
+                  className="nav-link text-reset fw-bold tx-orange"
+                  href="#surfing-section"
+                >
                   SURFING
                 </Link>
               </li>
               <li className="nav-item mx-md-3 text-white">
-                <Link className="nav-link text-reset fw-bold tx-orange" href="#accomodations-section">
+                <Link
+                  className="nav-link text-reset fw-bold tx-orange"
+                  href="#accomodations-section"
+                >
                   ACCOMMODATIONS
                 </Link>
               </li>
               <li className="nav-item mx-md-3 text-white">
-                <Link className="nav-link text-reset fw-bold tx-orange" href="#yoga-section">
+                <Link
+                  className="nav-link text-reset fw-bold tx-orange"
+                  href="#yoga-section"
+                >
                   YOGA
                 </Link>
               </li>
               <li className="nav-item mx-md-3 text-white">
-                <Link className="nav-link text-reset fw-bold tx-orange" href="#activities-section">
+                <Link
+                  className="nav-link text-reset fw-bold tx-orange"
+                  href="#activities-section"
+                >
                   ACTIVITIES
                 </Link>
               </li>
               <li className="nav-item mx-md-3 text-white">
-                <Link className="nav-link text-reset fw-bold tx-orange" href="#contacts-section">
+                <Link
+                  className="nav-link text-reset fw-bold tx-orange"
+                  href="#contacts-section"
+                >
                   CONTACTS
                 </Link>
               </li>
             </ul>
             <div className="d-lg-flex col-lg-2 justify-content-lg-end">
-              <button id="book-nav" className={`${tropicalOrange.className} btn text-white fs-4`}>
+              <button
+                id="book-nav"
+                className={`${tropicalOrange.className} btn text-white fs-4`}
+              >
                 BOOK NOW
               </button>
             </div>
@@ -96,57 +119,84 @@ export default function Navbar() {
         </div>
       </nav>
 
-      <div className="offcanvas offcanvas-start bg-nav-custom" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div
+        className="offcanvas offcanvas-start bg-nav-custom"
+        tabIndex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
         <div className="offcanvas-header">
           <h5 className="offcanvas-title" id="offcanvasExampleLabel">
-            <Image
-                src={purelogoURL}
-                alt="Logo"
-                width={150}
-              />
+            <Image src={purelogoURL} alt="Logo" width={150} />
           </h5>
-          <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button
+            type="button"
+            className="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
         </div>
         <div className="offcanvas-body">
-        <ul className="navbar-nav col-lg-8 justify-content-lg-center">
-              <li className="nav-item mx-md-3 my-2 text-white">
-                <Link className="nav-link text-reset fw-bold tx-orange" href="#surfing-section">
-                  SURFING
-                </Link>
-              </li>
-              <li className="nav-item mx-md-3 my-2 text-white">
-              <Link className="nav-link text-reset fw-bold tx-orange" href="#yoga-section">
-                  YOGA
-                </Link>
-              </li>
-              <li className="nav-item mx-md-3 my-2 text-white">
-                <Link className="nav-link text-reset fw-bold tx-orange" href="#activities-section">
-                  ACTIVITIES
-                </Link>
-              </li>
-              <li className="nav-item mx-md-3 my-2 text-white">
-              <Link className="nav-link text-reset fw-bold tx-orange" href="#packages-section">
-                  PACKAGES
-                </Link>
-              </li>
-              <li className="nav-item mx-md-3 my-2 text-white">
-                <Link className="nav-link text-reset fw-bold tx-orange" href="#accomodations-section">
-                  ACCOMMODATIONS
-                </Link>
-              </li>
-              <li className="nav-item mx-md-3 my-2 text-white">
-                <Link className="nav-link text-reset fw-bold tx-orange" href="#contacts-section">
-                  CONTACTS
-                </Link>
-              </li>
-            </ul>
-            <div className="d-lg-flex col-lg-2 justify-content-lg-end my-2">
-              <button id="book-nav" className="btn tx-blue-color fs-4 fw-bold m-0 p-0 tx-orange">
-                BOOK NOW
-              </button>
-            </div>
+          <ul className="navbar-nav col-lg-8 justify-content-lg-center">
+            <li className="nav-item mx-md-3 my-2 text-white">
+              <Link
+                className="nav-link text-reset fw-bold tx-orange"
+                href="#surfing-section"
+              >
+                SURFING
+              </Link>
+            </li>
+            <li className="nav-item mx-md-3 my-2 text-white">
+              <Link
+                className="nav-link text-reset fw-bold tx-orange"
+                href="#yoga-section"
+              >
+                YOGA
+              </Link>
+            </li>
+            <li className="nav-item mx-md-3 my-2 text-white">
+              <Link
+                className="nav-link text-reset fw-bold tx-orange"
+                href="#activities-section"
+              >
+                ACTIVITIES
+              </Link>
+            </li>
+            <li className="nav-item mx-md-3 my-2 text-white">
+              <Link
+                className="nav-link text-reset fw-bold tx-orange"
+                href="#packages-section"
+              >
+                PACKAGES
+              </Link>
+            </li>
+            <li className="nav-item mx-md-3 my-2 text-white">
+              <Link
+                className="nav-link text-reset fw-bold tx-orange"
+                href="#accomodations-section"
+              >
+                ACCOMMODATIONS
+              </Link>
+            </li>
+            <li className="nav-item mx-md-3 my-2 text-white">
+              <Link
+                className="nav-link text-reset fw-bold tx-orange"
+                href="#contacts-section"
+              >
+                CONTACTS
+              </Link>
+            </li>
+          </ul>
+          <div className="d-lg-flex col-lg-2 justify-content-lg-end my-2">
+            <button
+              id="book-nav"
+              className="btn tx-blue-color fs-4 fw-bold m-0 p-0 tx-orange"
+            >
+              BOOK NOW
+            </button>
+          </div>
         </div>
       </div>
     </>
-  )
+  );
 }
