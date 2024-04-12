@@ -265,7 +265,7 @@ export default function Home() {
                       </p>
                       <Link href="/packages">
                         <button className="btn-book text-uppercase fw-bold">
-                          Info&book
+                          info package
                         </button>
                       </Link>
                     </div>
@@ -295,7 +295,7 @@ export default function Home() {
                       </p>
                       <Link href="/packages">
                         <button className="btn-book text-uppercase fw-bold">
-                          Info&book
+                          info package
                         </button>
                       </Link>
                     </div>
@@ -325,7 +325,7 @@ export default function Home() {
                       </p>
                       <Link href="/packages">
                         <button className="btn-book text-uppercase fw-bold">
-                          Info&book
+                        info package
                         </button>
                       </Link>
                     </div>
@@ -390,7 +390,7 @@ export default function Home() {
               </p>
               <Link href="/surf">
                 <button className="btn-book text-uppercase fw-bold">
-                  Read more
+                  Surf plans
                 </button>
               </Link>
             </div>
@@ -488,7 +488,7 @@ export default function Home() {
               <div className="col-12 text-center">
                 <Link href="/accomodation">
                   <button className="btn-book text-uppercase fw-bold">
-                    MORE INFO
+                    Explore Our space
                   </button>
                 </Link>
               </div>
@@ -526,7 +526,7 @@ export default function Home() {
             </ul>
             <Link href="/yoga">
               <button className="btn-book text-uppercase fw-bold mt-3">
-                MORE INFO
+                yoga plans
               </button>
             </Link>
           </div>

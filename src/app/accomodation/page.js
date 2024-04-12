@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link';
 import { tropicalOrange } from "@/fonts/fonts";
 import style from "@/styles/accomodation.module.css";
 import SliderSwiper from "@/components/SliderSwiper";
@@ -13,7 +14,14 @@ export default function Accomodation() {
   return (
     <>
       <div className={style.centerheroaccomodations + " px-4 py-5 text-center"}>
-        <Image className="d-block mx-auto mb-4 img-fluid mt-5" src={pureSurfLogoWhite} alt="" width={300} />
+        <Link href="/">
+          <Image
+            className="d-block mx-auto mb-4 img-fluid mt-5"
+            src={pureSurfLogoWhite}
+            alt="pure blue retreat logo"
+            width={300}
+          />
+        </Link>
         <h1 className={`${tropicalOrange.className} display-1 text-white my-5`}>
           Accomodation
         </h1>

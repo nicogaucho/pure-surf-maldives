@@ -1,7 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import { tropicalOrange } from "@/fonts/fonts";
 import style from "../../styles/activities.module.css";
-import pureSurfLogo from "../../../public/pure-surf-logo-white.png";
+import pureSurfLogoWhite from "../../../public/pure-surf-logo-white.png";
 import snorkelURL from "../../../public/snorkel.jpg";
 import jetskyURL from "../../../public/Jetsky1.jpg";
 import kayakURL from "../../../public/kayaking.jpg";
@@ -15,12 +16,14 @@ export default function Activities() {
   return (
     <>
       <div className={style.centerheroaactivities + " px-4 py-5 text-center"}>
-        <Image
-          className="d-block mx-auto mb-4 img-fluid mt-5"
-          src={pureSurfLogo}
-          alt=""
-          width={300}
-        />
+        <Link href="/">
+          <Image
+            className="d-block mx-auto mb-4 img-fluid mt-5"
+            src={pureSurfLogoWhite}
+            alt="pure blue retreat logo"
+            width={300}
+          />
+        </Link>
         <h1 className={`${tropicalOrange.className} display-1 text-white my-5`}>
           Activities
         </h1>
@@ -29,7 +32,9 @@ export default function Activities() {
       <div id="explore" className="container my-5 py-5">
         <div className="row mb-5">
           <div className="col-12 text-center">
-            <h2 className={`${tropicalOrange.className} display-4 tx-main-color`}>
+            <h2
+              className={`${tropicalOrange.className} display-4 tx-main-color`}
+            >
               Explore more about our activities
             </h2>
           </div>
@@ -557,13 +562,19 @@ export default function Activities() {
       <div className="container-fluid">
         <div className="row">
           <div className="col-12 col-md-4 m-0 p-0">
-            <div className={style.cardaactivities1 + " card rounded-0 border-0"}></div>
+            <div
+              className={style.cardaactivities1 + " card rounded-0 border-0"}
+            ></div>
           </div>
           <div className="col-12 col-md-4 m-0 p-0">
-            <div className={style.cardaactivities2 + " card rounded-0 border-0"}></div>
+            <div
+              className={style.cardaactivities2 + " card rounded-0 border-0"}
+            ></div>
           </div>
           <div className="col-12 col-md-4 m-0 p-0">
-            <div className={style.cardaactivities3 + " card rounded-0 border-0"}></div>
+            <div
+              className={style.cardaactivities3 + " card rounded-0 border-0"}
+            ></div>
           </div>
         </div>
         <div className="container my-5 py-4">
