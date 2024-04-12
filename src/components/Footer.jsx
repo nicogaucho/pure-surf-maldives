@@ -11,15 +11,6 @@ export default function Footer() {
           <footer className="row py-3 my-3 align-items-center">
             <div className="col mb-3">
               <p className={`${tropicalOrange.className} fs-4 tx-main-color m-0 p-0`}>partners</p>
-              <div className="d-flex">
-              <a href="/" className="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                <Image
-                  src={purelogoURL}
-                  placeholder="blur"
-                  width={200}
-                  alt="pure surf logo"
-                />
-              </a>
               <a href="/" className="d-flex align-items-center mb-3 mx-md-3 link-body-emphasis text-decoration-none">
                 <Image
                   src={noahlogoURL}
@@ -28,15 +19,10 @@ export default function Footer() {
                   alt="noah surf logo"
                 />
               </a>
-              </div>
             </div>
 
             <div className="col mb-3">
-
-            </div>
-
-            <div className="col mb-3">
-              <h5 className={`${tropicalOrange.className} fs-4 tx-main-color`}>Courses</h5>
+            <h5 className={`${tropicalOrange.className} fs-4 tx-main-color`}>Courses</h5>
               <ul className="nav flex-column">
                 <li className="nav-item mb-2">
                   <Link href="#surfing-section" className="nav-link p-0 text-white">
@@ -68,12 +54,12 @@ export default function Footer() {
                 </Link>                  
                 </li>
                 <li className="nav-item mb-2">
-                <Link href="#" className="nav-link p-0 text-white">
+                <Link href="#contacts-section" className="nav-link p-0 text-white">
                   Faqs
                 </Link>                  
                 </li>
                 <li className="nav-item mb-2">
-                <Link href="#" className="nav-link p-0 text-white">
+                <Link href="#contacts-section" className="nav-link p-0 text-white">
                   Careers
                 </Link>                  
                 </li>
@@ -88,6 +74,7 @@ export default function Footer() {
                 <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Email: info.pureblue@pureblueretreat.com </a></li>
               </ul>
             </div>
+
           </footer>
         </div>
       </div>

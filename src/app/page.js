@@ -22,6 +22,7 @@ import yogacoursesURL from "../../public/yogacourses.jpg";
 import skatingURL from "../../public/skating.jpg";
 import snorkelingURL from "../../public/snorkeling.jpeg";
 import jetskyURL from "../../public/jetsky.jpg";
+import SocialComponent from '@/components/SocialComponent';
 
 export default function Home() {
   return (
@@ -72,10 +73,10 @@ export default function Home() {
           <div className="carousel-inner">
             <div className={`carousel-item active ${styles.firstslide}`}>
               <div className="carousel-caption caption-animated">
-                <p className="fw-light m-0 p-0">Follow on our social network</p>
-                <i className="bi bi-facebook mx-2 tx-main-color"></i>
-                <i className="bi bi-instagram mx-2 tx-main-color"></i>
-                <i className="bi bi-twitter mx-2 tx-main-color"></i>
+                <p className="fw-light m-0 p-0">Design for all levels and budget</p>
+                <p className="tx-main-color small">
+                  From snorkeling to jet skiing, there`&apos;s something for everyone
+                </p>
               </div>
             </div>
             <div className={`carousel-item ${styles.secondslide}`}>
@@ -753,6 +754,9 @@ export default function Home() {
         </div>
       </div>
       <FormContact />
+
+      <SocialComponent />
+
       <Footer />
     </>
   );

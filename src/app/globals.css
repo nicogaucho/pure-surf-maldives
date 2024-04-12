@@ -22,6 +22,15 @@
   background: linear-gradient(var(--sec-color), transparent);
 }
 
+.btn-book-nav {
+  margin: 0;
+  padding: 10px 20px;
+  color: white;
+  font-size: 23px;
+  border: none;
+  background-color: orangered;
+}
+
 .bg-nav-custom-scroll {
   transition: 0.4s;
   background-color  : var(--sec-color) !important;

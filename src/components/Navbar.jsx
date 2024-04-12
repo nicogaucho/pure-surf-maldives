@@ -190,7 +190,7 @@ export default function Navbar() {
           <div className="d-lg-flex col-lg-2 justify-content-lg-end my-2">
             <button
               id="book-nav"
-              className="btn tx-blue-color fs-4 fw-bold m-0 p-0 tx-orange"
+              className={`${tropicalOrange.className} btn-book-nav`}
             >
               BOOK NOW
             </button>
