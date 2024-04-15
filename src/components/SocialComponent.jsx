@@ -18,7 +18,7 @@ export default function SocialComponent() {
             />
           </div>
           <div className="col-12 col-md-4 mb-5 mb-md-0 text-center">
-            <a href="https://www.instagram.com/ pure_blue_surf_yoga_retreat" 
+            <a href="https://www.instagram.com/pure_blue_surf_yoga_retreat/" target="_blank" 
               className={`${tropicalOrange.className}  tx-sec-color fs-3`}
             > 
               Follow us on Instagram

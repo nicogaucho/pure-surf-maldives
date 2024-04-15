@@ -58,11 +58,11 @@ export default function Packages() {
                   yoga classes
                 </td>
                 <td>
-                  score great waves, train turns and flow. Stretch and connect
+                  Score great waves, train turns and flow. Stretch and connect
                   with yoga
                 </td>
                 <td>
-                  enjoy the bliss and peace of Maldives while discovering the
+                  Enjoy the bliss and peace of Maldives while discovering the
                   local culture and wonderful landscapes
                 </td>
               </tr>

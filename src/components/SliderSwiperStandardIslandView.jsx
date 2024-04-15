@@ -12,10 +12,10 @@ import "swiper/css/thumbs";
 // import required modules
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 
-import roomURL from "../../public/room.jpg";
-import room1URL from "../../public/room1.jpg";
-import room2URL from "../../public/room2.jpg";
-import room3URL from "../../public/room3.jpg";
+import roomURL from "../../public/fotostanze/StandardIslandView/1.jpg";
+import room1URL from "../../public/fotostanze/StandardIslandView/2.jpg";
+import room2URL from "../../public/fotostanze/StandardIslandView/3.jpg";
+
 
 export default function SliderSwiper() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -41,9 +41,6 @@ export default function SliderSwiper() {
         <SwiperSlide>
           <Image src={room2URL} className="img-fluid" alt="room image" />
         </SwiperSlide>
-        <SwiperSlide>
-          <Image src={room3URL} className="img-fluid" alt="room image" />
-        </SwiperSlide>
       </Swiper>
       <Swiper
         onSwiper={setThumbsSwiper}
@@ -62,9 +59,6 @@ export default function SliderSwiper() {
         </SwiperSlide>
         <SwiperSlide>
           <Image src={room2URL} className="img-fluid" alt="room image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={room3URL} className="img-fluid" alt="room image" />
         </SwiperSlide>
       </Swiper>
     </>

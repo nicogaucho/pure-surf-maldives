@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { tropicalOrange } from "@/fonts/fonts";
 import purelogoURL from "../../public/pure-surf-logo-white.png";
+import menuURL from "../../public/menubar.png";
 
 export default function Navbar() {
   const [scrolling, setScrolling] = useState(false);
@@ -43,7 +44,7 @@ export default function Navbar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i class="bi bi-list display-3 text-white"></i>
+            <Image src={menuURL} alt="menu bar" width={30} />
           </button>
           <div className="collapse navbar-collapse d-lg-flex">
             <a
@@ -110,7 +111,7 @@ export default function Navbar() {
             <div className="d-lg-flex col-lg-2 justify-content-lg-end">
               <button
                 id="book-nav"
-                className={`${tropicalOrange.className} btn text-white fs-4`}
+                className={`${tropicalOrange.className} btn-book-nav`}
               >
                 BOOK NOW
               </button>

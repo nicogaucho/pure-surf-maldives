@@ -75,7 +75,7 @@ export default function Home() {
               <div className="carousel-caption caption-animated">
                 <p className="fw-light m-0 p-0">Design for all levels and budget</p>
                 <p className="tx-main-color small">
-                  From snorkeling to jet skiing, there`&apos;s something for everyone
+                  From snorkeling to jet skiing, there&apos;s something for everyone
                 </p>
               </div>
             </div>
