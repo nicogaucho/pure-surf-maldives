@@ -53,8 +53,8 @@ export default function Navbar() {
             >
               <Image
                 src={purelogoURL}
-                alt="Logo"
-                width={150}
+                alt="pure blue logo"
+                width={80}
                 priority={false}
               />
             </a>

@@ -3,9 +3,9 @@ import Link from "next/link";
 import { tropicalOrange } from "@/fonts/fonts";
 import style from "../../styles/packages.module.css";
 import pureSurfLogoWhite from "../../../public/pure-surf-logo-white.png";
-import firststepURL from "../../../public/firststep.jpg";
-import improvementURL from "../../../public/improvement.jpg";
-import freespiritURL from "../../../public/surf-pack.jpg";
+import firststepURL from "../../../public/firststep.jpeg";
+import improvementURL from "../../../public/stafania.jpeg";
+import freespiritURL from "../../../public/freesurf.jpeg";
 import Footer from "@/components/Footer";
 
 export default function Packages() {
@@ -17,7 +17,7 @@ export default function Packages() {
             className="d-block mx-auto mb-4 img-fluid mt-5"
             src={pureSurfLogoWhite}
             alt="pure blue retreat logo"
-            width={300}
+            width={200}
           />
         </Link>
         <h1 className={`display-1 text-white my-5 ${tropicalOrange.className}`}>

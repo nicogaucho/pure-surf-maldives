@@ -19,7 +19,7 @@ export default function Yoga() {
             className="d-block mx-auto mb-4 img-fluid mt-5"
             src={pureSurfLogoWhite}
             alt="pure blue retreat logo"
-            width={300}
+            width={200}
           />
         </Link>
         <h1 className={`display-1 text-white my-5 ${tropicalOrange.className}`}>Yoga Courses</h1>

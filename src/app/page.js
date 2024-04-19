@@ -12,9 +12,9 @@ import packages from "../../public/packages.png";
 import season from "../../public/season.png";
 import cancellation from "../../public/cancellation.png";
 import globe from "../../public/global.png";
-import firststepURL from "../../public/firststep.jpg";
-import improvementURL from "../../public/improvement.jpg";
-import freespiritURL from "../../public/freespirit.jpg";
+import firststepURL from "../../public/firststep.jpeg";
+import stefania from "../../public/stafania.jpeg";
+import freespiritURL from "../../public/freesurf.jpeg";
 import facilitiesURL from "../../public/facilities.jpg";
 import roomsURL from "../../public/room.jpg";
 import foodURL from "../../public/food.jpg";
@@ -279,7 +279,7 @@ export default function Home() {
                 >
                   <Image
                     alt="improvement package"
-                    src={improvementURL}
+                    src={stefania}
                     placeholder="blur"
                     className="card-img opacity-50"
                   />

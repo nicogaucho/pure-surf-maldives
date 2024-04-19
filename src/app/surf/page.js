@@ -3,7 +3,8 @@ import Link from 'next/link';
 import { tropicalOrange } from "@/fonts/fonts";
 import style from "../../styles/surf.module.css";
 import pureSurfLogoWhite from "../../../public/pure-surf-logo-white.png";
-import surfPackURL from "../../../public/surf-pack.jpg";
+import surfPackURL from "../../../public/surf-pack.jpeg";
+import surfPack2URL from "../../../public/surf-pack-2.jpeg";
 import skateURL from "../../../public/skate.jpg";
 import mapURL from "../../../public/map.jpg";
 import Footer from "@/components/Footer";
@@ -17,7 +18,7 @@ export default function Surf() {
             className="d-block mx-auto mb-4 img-fluid mt-5"
             src={pureSurfLogoWhite}
             alt="pure blue retreat logo"
-            width={300}
+            width={200}
           />
         </Link>
         <h1 className={`display-1 text-white my-5 ${tropicalOrange.className}`}>
@@ -59,7 +60,7 @@ export default function Surf() {
         </div>
         <div className="row mb-5 justify-content-around align-items-center">
           <div className="col-12 col-md-5 mb-5">
-            <Image src={surfPackURL} className="img-fluid" alt="surf image" />
+            <Image src={surfPack2URL} className="img-fluid" alt="surf image" />
           </div>
           <div className="col-12 col-md-4 mb-5 order-md-first">
             <p className="tx-main-color text-uppercase">SPOTS</p>

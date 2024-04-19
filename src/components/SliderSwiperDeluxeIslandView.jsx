@@ -33,7 +33,7 @@ export default function SliderSwiper() {
         className="mySwiper2"
       >
         <SwiperSlide>
-          <Image src={roomURL} className="img-fluid"  alt="room image"/>
+          <Image src={roomURL} className="img-fluid" alt="room image"/>
         </SwiperSlide>
         <SwiperSlide>
           <Image src={room1URL} className="img-fluid" alt="room image" />
