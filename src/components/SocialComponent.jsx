@@ -30,7 +30,7 @@ export default function SocialComponent() {
               width={50}
             />
             </a>
-            <a href="https://www.instagram.com/pure_blue_surf_yoga_retreat/" target="_blank" 
+            <a href="https://www.facebook.com/profile.php?id=61557619311840&mibextid=LQQJ4d&rdid=3U46ScnkSMkdJh4K" target="_blank" 
               className={`${tropicalOrange.className}  tx-sec-color fs-3`}
             > 
               Follow us on facebook
