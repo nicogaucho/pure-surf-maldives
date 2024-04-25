@@ -27,3 +27,59 @@
   background-repeat: no-repeat;
 }
 
+.cookiesconsentPanel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(42, 51, 66, 0.7);
+  z-index: 5000;
+}
+
+.cookiesconsent {
+  position: fixed;
+  max-width: 100%;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 12vw;
+  padding-right: 12vw;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #333;
+  color: #FFFFFF;
+}
+
+.cookiesText {
+  color: #ffffff; 
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.cookiesButton {
+  background-color: #007bff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-right: 2%;
+}
+
+.cookiesButtonRefused {
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}

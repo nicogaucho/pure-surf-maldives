@@ -11,10 +11,12 @@ import sandBankURL from "../../../public/sand-bank.jpeg";
 import yoga1 from "../../../public/yoga1.jpg";
 import skateURL from "../../../public/skate.jpg";
 import Footer from "@/components/Footer";
+import CookiesConsent from "@/components/CookiesConsent";
 
 export default function Activities() {
   return (
     <>
+    <CookiesConsent/>
       <div className={style.centerheroaactivities + " px-4 py-5 text-center"}>
         <Link href="/">
           <Image

@@ -11,10 +11,12 @@ import noahLogo from "../../../public/noah-logo-bigger.png";
 import foodSectionURL from "../../../public/foodsection.jpg";
 import lifeMaldivesURL from "../../../public/lifemaldives.jpg";
 import Footer from "@/components/Footer";
+import CookiesConsent from "@/components/CookiesConsent";
 
 export default function Accomodation() {
   return (
     <>
+    <CookiesConsent/>
       <div className={style.centerheroaccomodations + " px-4 py-5 text-center"}>
         <Link href="/">
           <Image

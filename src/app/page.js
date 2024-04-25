@@ -23,10 +23,14 @@ import skatingURL from "../../public/skating.jpg";
 import snorkelingURL from "../../public/snorkeling.jpeg";
 import jetskyURL from "../../public/jetsky.jpg";
 import SocialComponent from '@/components/SocialComponent';
+import { cookies } from "next/headers";
+import CookiesConsent from "@/components/CookiesConsent";
 
 export default function Home() {
+
   return (
     <>
+    <CookiesConsent/>
       <Navbar />
       <div className="position-absolute heading">
         <div className="container">
@@ -756,7 +760,6 @@ export default function Home() {
       <FormContact />
 
       <SocialComponent />
-
       <Footer />
     </>
   );

@@ -7,10 +7,12 @@ import firststepURL from "../../../public/firststep.jpeg";
 import improvementURL from "../../../public/stafania.jpeg";
 import freespiritURL from "../../../public/freesurf.jpeg";
 import Footer from "@/components/Footer";
+import CookiesConsent from "@/components/CookiesConsent";
 
 export default function Packages() {
   return (
     <>
+    <CookiesConsent/>
       <div className={style.centerheropackage + " px-4 py-5 text-center"}>
         <Link href="/">
           <Image

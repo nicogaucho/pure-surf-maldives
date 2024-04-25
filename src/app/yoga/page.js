@@ -9,10 +9,12 @@ import yoga4 from "../../../public/yoga4.jpg";
 import yoga5 from "../../../public/yoga5.jpg";
 import yoga6 from "../../../public/yoga6.jpg";
 import Footer from "@/components/Footer";
+import CookiesConsent from "@/components/CookiesConsent";
 
 export default function Yoga() {
   return (
     <>
+    <CookiesConsent/>
       <div className={style.centerheroyoga + " px-4 py-5 text-center"}>
       <Link href="/">
           <Image
