@@ -132,7 +132,7 @@ export default function Accomodation() {
                       >
                         Standard Island view
                       </p>
-                      <p className="text-secondary">maximum 2 beds from 98€</p>
+                      <p className="text-secondary">maximum 2 beds starting from 82€/night</p>
                       <ul>
                         <li className="my-2">
                           Spacious and comfortable accommodation
@@ -176,7 +176,7 @@ export default function Accomodation() {
                         Standard Ocean View{" "}
                       </p>
                       <p className="text-secondary">
-                        maximum 2 beds from 114 €
+                        maximum 2 beds starting from 102€/night
                       </p>
                       <ul>
                         <li className="my-2">
@@ -220,7 +220,7 @@ export default function Accomodation() {
                       >
                         Deluxe Island Viex
                       </p>
-                      <p className="text-secondary">maximum 3 beds from 124€</p>
+                      <p className="text-secondary">maximum 3 beds starting from 114€/night</p>
                       <ul>
                         <li className="my-2">
                           Spacious and comfortable accommodation
@@ -264,7 +264,7 @@ export default function Accomodation() {
                         Deluxe Ocean View
                       </p>
                       <p className="text-secondary">
-                        maximum 3 beds from 144 €
+                        maximum 3 beds starting from 140€/night
                       </p>
                       <ul>
                         <li className="my-2">
@@ -428,10 +428,11 @@ export default function Accomodation() {
                 />
                 <Image src={noahLogo} alt="logo noah" width={100} />
               </div>
-              <strong>Starting from 500€/week per person</strong>
+              <strong>Starting from 690€/week per person</strong>
               <div className="col-12 mb-5 text-center">
                 <button className="btn-book text-uppercase fw-bold mt-5">
-                  Book now
+                <a className="text-decoration-none text-white" id="book-nav"
+                 href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058&token=AmxveVZe89vIhQpumcTGHxdz">Book now</a>
                 </button>
               </div>
               <p className="small text-secondary">

@@ -98,9 +98,9 @@ export default function Packages() {
               </tr>
               <tr className="table-light">
                 <th scope="row">Prices</th>
+                <td>890€ / week</td>
                 <td>790€ / week</td>
                 <td>690€ / week</td>
-                <td>590€ / week</td>
               </tr>
             </tbody>
           </table>
@@ -190,14 +190,14 @@ export default function Packages() {
                       </p>
                       <p className="lead tx-main-color">Overview</p>
                       <p className="text-secondary">
-                        Our Pure Blue &quot;First Stemp&quot; package is perfect
+                        Our Pure Blue &quot;First Step&quot; package is perfect
                         for beginner surfers who want to learn to catch some
                         great waves step by step and join yoga classes to
                         stretch and relax. You will discover some of the best
                         beginner surf spots of Maldives and swim in crystalline
                         water. During the week there are also 2 yoga sessions by
                         the beautiful coast perfect to stretch and relax after
-                        surfing. That&quot;s not it! You will be able to try
+                        surfing. That&apos;s not it! You will be able to try
                         surf skateboarding and many other activities like
                         snorkelling or kayaking. Experience the joy of surfing
                         in paradise, where every moment is filled with adventure
@@ -271,10 +271,11 @@ export default function Packages() {
                       </p>
                       <div className="mt-5">
                         <p>
-                          <strong>From 790 €</strong> per person / Week
+                          <strong>From 890 €</strong> per person / Week
                         </p>
                         <button className="btn-book text-uppercase fw-bold">
-                          Book now
+                        <a className="text-decoration-none text-white" id="book-nav"
+                 href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058&token=AmxveVZe89vIhQpumcTGHxdz">Book now</a>
                         </button>
                       </div>
                     </div>
@@ -382,10 +383,11 @@ export default function Packages() {
                       </p>
                       <div className="mt-5">
                         <p>
-                          <strong>From 690 €</strong> per person / Week
+                          <strong>From 790 €</strong> per person / Week
                         </p>
                         <button className="btn-book text-uppercase fw-bold">
-                          Book now
+                        <a className="text-decoration-none text-white" id="book-nav"
+                 href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058&token=AmxveVZe89vIhQpumcTGHxdz">Book now</a>
                         </button>
                       </div>
                     </div>
@@ -490,10 +492,11 @@ export default function Packages() {
                       </p>
                       <div className="mt-5">
                         <p>
-                          <strong>From 590 €</strong> per person / Week
+                          <strong>From 690 €</strong> per person / Week
                         </p>
                         <button className="btn-book text-uppercase fw-bold">
-                          Book now
+                        <a className="text-decoration-none text-white" id="book-nav"
+                 href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058&token=AmxveVZe89vIhQpumcTGHxdz">Book now</a>
                         </button>
                       </div>
                     </div>

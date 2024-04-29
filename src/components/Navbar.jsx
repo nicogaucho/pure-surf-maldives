@@ -109,12 +109,8 @@ export default function Navbar() {
               </li>
             </ul>
             <div className="d-lg-flex col-lg-2 justify-content-lg-end">
-              <button
-                id="book-nav"
-                className={`${tropicalOrange.className} btn-book-nav`}
-              >
-                BOOK NOW
-              </button>
+                <a id="book-nav"
+                className={`${tropicalOrange.className} btn-book-nav text-decoration-none`} href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058&token=AmxveVZe89vIhQpumcTGHxdz">Book now</a>
             </div>
           </div>
         </div>
@@ -189,12 +185,8 @@ export default function Navbar() {
             </li>
           </ul>
           <div className="d-lg-flex col-lg-2 justify-content-lg-end my-2">
-            <button
-              id="book-nav"
-              className={`${tropicalOrange.className} btn-book-nav`}
-            >
-              BOOK NOW
-            </button>
+          <a id="book-nav"
+                className={`${tropicalOrange.className} btn-book-nav text-decoration-none`} href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058&token=AmxveVZe89vIhQpumcTGHxdz">Book now</a>
           </div>
         </div>
       </div>

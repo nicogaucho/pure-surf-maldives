@@ -3,11 +3,11 @@ import Link from 'next/link';
 import { tropicalOrange } from "@/fonts/fonts";
 import style from "../../styles/yoga.module.css";
 import pureSurfLogoWhite from "../../../public/pure-surf-logo-white.png";
-import yoga2 from "../../../public/yoga2.jpg";
-import yoga3 from "../../../public/yoga3.jpg";
+import yoga2 from "../../../public/y3.jpg";
+import yoga3 from "../../../public/y2.jpg";
 import yoga4 from "../../../public/yoga4.jpg";
 import yoga5 from "../../../public/yoga5.jpg";
-import yoga6 from "../../../public/yoga6.jpg";
+import yoga6 from "../../../public/y1.jpg";
 import Footer from "@/components/Footer";
 
 export default function Yoga() {
@@ -38,7 +38,7 @@ export default function Yoga() {
               src={yoga6}
               alt="yoga course"
               className="img-fluid"
-              placeholder="blur"
+              blurDataURL
             />
           </div>
           <div className="col-12 col-md-5 mb-5">
@@ -53,7 +53,7 @@ export default function Yoga() {
               src={yoga3}
               alt="yoga course"
               className="img-fluid"
-              placeholder="blur"
+              blurDataURL
             />
           </div>
           <div className="col-12 col-md-5 mb-5 order-md-first">
@@ -90,7 +90,7 @@ export default function Yoga() {
               src={yoga2}
               alt="yoga course"
               className="img-fluid"
-              placeholder="blur"
+              blurDataURL
              
             />
           </div>
@@ -135,8 +135,12 @@ export default function Yoga() {
                 <li className="mb-4">
                 Sessions are personalized to address your specific requirements, ensuring a unique experience tailored to you.
                 </li>
+                <div>
+                  <strong>Starting from 690€/week per person</strong>
+                </div>
                 <button className="btn-book text-uppercase fw-bold mt-5">
-                  Book now
+                <a className="text-decoration-none text-white" id="book-nav"
+                 href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058&token=AmxveVZe89vIhQpumcTGHxdz">Book now</a>
                 </button>
               </ul>
             </div>
