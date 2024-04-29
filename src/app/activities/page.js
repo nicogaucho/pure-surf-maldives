@@ -9,7 +9,7 @@ import kayakURL from "../../../public/kayaking.jpg";
 import fishingURL from "../../../public/fishing.jpg";
 import sandBankURL from "../../../public/sand-bank.jpeg";
 import yoga1 from "../../../public/y1.jpg";
-import skateURL from "../../../public/skate.JPG";
+import skateURL from "../../../public/skate.jpg";
 import Footer from "@/components/Footer";
 
 export default function Activities() {

@@ -5,7 +5,7 @@ import style from "../../styles/surf.module.css";
 import pureSurfLogoWhite from "../../../public/pure-surf-logo-white.png";
 import surfPackURL from "../../../public/surf-pack.jpeg";
 import surfPack2URL from "../../../public/surf-pack-2.jpeg";
-import skateURL from "../../../public/skate.JPG";
+import skateURL from "../../../public/skate.jpg";
 import mapURL from "../../../public/map.jpg";
 import Footer from "@/components/Footer";
 
