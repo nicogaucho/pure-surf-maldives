@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from "next/link";
 import { tropicalOrange } from "@/fonts/fonts";
-import purelogoURL from "../../public/pure-surf-logo-white.png";
 import noahlogoURL from "../../public/noah-logo-bigger.png";
 
 export default function Footer() {
@@ -70,7 +69,7 @@ export default function Footer() {
               <h5 className={`${tropicalOrange.className} fs-4 tx-main-color`}>Contact us</h5>
               <ul className="nav flex-column">
                 <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Phone number: +960 775-0180</a></li>
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Whats app: +34 643 542 843</a></li>
+                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Whats app: +960 917-5113</a></li>
                 <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Email: info.pureblue@pureblueretreat.com </a></li>
               </ul>
             </div>

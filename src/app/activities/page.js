@@ -10,6 +10,9 @@ import fishingURL from "../../../public/fishing.jpg";
 import sandBankURL from "../../../public/sand-bank.jpeg";
 import yoga1 from "../../../public/y1.jpg";
 import skateURL from "../../../public/skate.jpg";
+import islandhoppingURL from "../../../public/islandhopping.jpg";
+import wakeboardURL from "../../../public/wakeboard.jpg";
+import funtuberideURL from "../../../public/funtuberide.jpg";
 import Footer from "@/components/Footer";
 
 export default function Activities() {
@@ -119,15 +122,43 @@ export default function Activities() {
               <li className="nav-item" role="presentation">
                 <button
                   className="nav-link text-dark spacing text-uppercase fw-bold"
-                  id="yoga"
+                  id="wakeboard"
                   data-bs-toggle="tab"
-                  data-bs-target="#yoga-pane"
+                  data-bs-target="#wake-pane"
                   type="button"
                   role="tab"
-                  aria-controls="yoga-pane"
+                  aria-controls="wake-pane"
                   aria-selected="false"
                 >
-                  SURF&YOGA
+                  WAKE BOARD
+                </button>
+              </li>
+              <li className="nav-item" role="presentation">
+                <button
+                  className="nav-link text-dark spacing text-uppercase fw-bold"
+                  id="funtuberide"
+                  data-bs-toggle="tab"
+                  data-bs-target="#funtube-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="funtube-pane"
+                  aria-selected="false"
+                >
+                  Fun tube ride
+                </button>
+              </li>
+              <li className="nav-item" role="presentation">
+                <button
+                  className="nav-link text-dark spacing text-uppercase fw-bold"
+                  id="islandhoping"
+                  data-bs-toggle="tab"
+                  data-bs-target="#island-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="island-pane"
+                  aria-selected="false"
+                >
+                  Island hopping
                 </button>
               </li>
               <li className="nav-item" role="presentation">
@@ -228,7 +259,7 @@ export default function Activities() {
                               </td>
                             </tr>
                             <tr>
-                              <th scope="row">Stingray snorkeling (BOAT)</th>
+                              <th scope="row">Stingray snorkeling</th>
                               <td>2 HRS</td>
                               <td>from $80</td>
                               <td>
@@ -249,7 +280,7 @@ export default function Activities() {
                               <th scope="row">Shark point snorkeling</th>
                               <td>2 HRS</td>
                               <td>
-                                from $25
+                                from $80
                               </td>
                               <td>Dive into the adventure at Shark Point</td>
                             </tr>
@@ -433,7 +464,7 @@ export default function Activities() {
               </div>
               <div
                 className="tab-pane fade"
-                id="yoga-pane"
+                id="wake-pane"
                 role="tabpanel"
                 aria-labelledby="sand-back-tab"
                 tabIndex="0"
@@ -441,36 +472,94 @@ export default function Activities() {
                 <div className="container p-5">
                   <div className="row justify-content-around">
                     <div className="col-12 col-md-5 mb-3 mt-md-5">
-                      <Image src={yoga1} className="img-fluid" alt="" />
+                      <Image src={wakeboardURL} className="img-fluid" alt="wakeboard" />
                     </div>
                     <div className="col-12 col-md-5 mb-3">
                       <p
                         className={`${tropicalOrange.className} h1 tx-blue-color`}
                       >
-                        SURF&YOGA ULTRA EXCURSION
+                        WAKE BOARD
                       </p>
-                      <p className="lead tx-main-color">Surf Ultra</p>
+                      <p className="lead tx-main-color">Overview</p>
                       <p className="text-secondary">
-                        Improve your surfing with personalized video analysis,
-                        surf safaris to new spots, Surfskate classes, and
-                        dedicated coaching sessions to master your surf skills.
+                        Rid towed behind a motorboat in the crystal clear waters of Maldives
                       </p>
                       <p className="lead tx-main-color">How to do it</p>
                       <p className="text-secondary">
                         You can add this activity
                         directly in the house at your arrival.
                       </p>
-                      <p className="lead tx-main-color">Yoga Ultra</p>
+                      <ul className="list-unstyled">
+                        <li className="fw-bold">Starting from 80$</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="tab-pane fade"
+                id="funtube-pane"
+                role="tabpanel"
+                aria-labelledby="sand-back-tab"
+                tabIndex="0"
+              >
+                <div className="container p-5">
+                  <div className="row justify-content-around">
+                    <div className="col-12 col-md-5 mb-3 mt-md-5">
+                      <Image src={funtuberideURL} className="img-fluid" alt="" />
+                    </div>
+                    <div className="col-12 col-md-5 mb-3">
+                      <p
+                        className={`${tropicalOrange.className} h1 tx-blue-color`}
+                      >
+                        Fun tube ride
+                      </p>
+                      <p className="lead tx-main-color">Overview</p>
                       <p className="text-secondary">
-                        Enjoy additional guided sessions, personalized coaching,
-                        and exclusive workshops to deepen your practice and find
-                        inner peace in the beautiful Maldives.
+                      Fun tube riding sitting in an inflatable tube towed behind a boat and enjoy the thrill of being pulled across the beautiful water
                       </p>
                       <p className="lead tx-main-color">How to do it</p>
                       <p className="text-secondary">
                         You can add this activity
                         directly in the house at your arrival.
                       </p>
+                      <ul className="list-unstyled">
+                        <li className="fw-bold">Starting from 80$</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="tab-pane fade"
+                id="island-pane"
+                role="tabpanel"
+                aria-labelledby="sand-back-tab"
+                tabIndex="0"
+              >
+                <div className="container p-5">
+                  <div className="row justify-content-around">
+                    <div className="col-12 col-md-5 mb-3 mt-md-5">
+                      <Image src={islandhoppingURL} className="img-fluid" alt="" />
+                    </div>
+                    <div className="col-12 col-md-5 mb-3">
+                      <p
+                        className={`${tropicalOrange.className} h1 tx-blue-color`}
+                      >
+                        Island Hopping
+                      </p>
+                      <p className="lead tx-main-color">Overview</p>
+                      <p className="text-secondary">
+                      Island hopping in the Maldives with Pure Blue surf and yoga retreat offers the opportunity to explore multiple islands in the stunning Maldives archipelago. You can discover secluded beaches, snorkel in crystal-clear waters, and immerse in the natural beauty and vibrant culture of this tropical paradise
+                      </p>
+                      <p className="lead tx-main-color">How to do it</p>
+                      <p className="text-secondary">
+                        You can add this activity
+                        directly in the house at your arrival.
+                      </p>
+                      <ul className="list-unstyled">
+                        <li className="fw-bold">Starting from 150$</li>
+                      </ul>
                     </div>
                   </div>
                 </div>

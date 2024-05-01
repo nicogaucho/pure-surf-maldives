@@ -19,7 +19,7 @@ import facilitiesURL from "../../public/facilities.jpg";
 import roomsURL from "../../public/room.jpg";
 import foodURL from "../../public/food.jpg";
 import yogacoursesURL from "../../public/y4.jpg";
-import skatingURL from "../../public/skating.jpg";
+import skatingURL from "../../public/skate-activity.jpg";
 import snorkelingURL from "../../public/snorkeling.jpeg";
 import jetskyURL from "../../public/jetsky.jpg";
 import SocialComponent from '@/components/SocialComponent';
@@ -173,7 +173,7 @@ export default function Home() {
                     className="d-block mx-auto mb-3"
                   />
                   <p className="spacing tx-main-color p-0 m-0">SURFING</p>
-                  <p className="p-0 m-0">All kinds of waves</p>
+                  <p className="p-0 m-0">All kinds of waves, Gentle Reef Break</p>
                 </div>
               </div>
               <div className="col-6 mb-3">
@@ -197,7 +197,7 @@ export default function Home() {
                     className="d-block mx-auto mb-3"
                   />
                   <p className="spacing tx-main-color p-0 m-0">SEASON</p>
-                  <p className="p-0 m-0">May - January</p>
+                  <p className="p-0 m-0">March - November</p>
                 </div>
               </div>
               <div className="col-6 mb-3">
@@ -209,7 +209,7 @@ export default function Home() {
                     className="d-block mx-auto mb-3"
                   />
                   <p className="spacing tx-main-color p-0 m-0">PACKAGES</p>
-                  <p className="p-0 m-0">Starting from 700€</p>
+                  <p className="p-0 m-0">Starting from 690€</p>
                 </div>
               </div>
             </div>
@@ -623,7 +623,7 @@ export default function Home() {
             <div className="col-12 text-center">
               <Link href="/activities">
                 <button className="btn-book text-uppercase fw-bold">
-                  SEE ALL ACTIVITIES
+                  SEE MORE ACTIVITIES
                 </button>
               </Link>
             </div>
