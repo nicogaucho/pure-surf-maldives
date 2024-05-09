@@ -283,7 +283,7 @@ export default function Packages() {
                           <a
                             className="text-decoration-none text-white"
                             id="book-nav"
-                            href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058&token=AmxveVZe89vIhQpumcTGHxdz"
+                            href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058"
                           >
                             Book now
                           </a>
@@ -400,7 +400,7 @@ export default function Packages() {
                           <a
                             className="text-decoration-none text-white"
                             id="book-nav"
-                            href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058&token=AmxveVZe89vIhQpumcTGHxdz"
+                            href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058"
                           >
                             Book now
                           </a>
@@ -514,7 +514,7 @@ export default function Packages() {
                           <a
                             className="text-decoration-none text-white"
                             id="book-nav"
-                            href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058&token=AmxveVZe89vIhQpumcTGHxdz"
+                            href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058"
                           >
                             Book now
                           </a>

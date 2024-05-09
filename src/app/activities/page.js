@@ -641,7 +641,7 @@ export default function Activities() {
             <div className="col-12 text-center">
               <button className="btn-book text-uppercase fw-bold">
               <a className="text-decoration-none text-white" id="book-nav"
-                 href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058&token=AmxveVZe89vIhQpumcTGHxdz">Book now</a>
+                 href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058">Book now</a>
               </button>
             </div>
           </div>
