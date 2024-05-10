@@ -8,10 +8,12 @@ import surfPack2URL from "../../../public/surf-pack-2.jpeg";
 import skateURL from "../../../public/skate.jpg";
 import mapURL from "../../../public/map.jpg";
 import Footer from "@/components/Footer";
+import CookiesConsent from "@/components/CookiesConsent";
 
 export default function Surf() {
   return (
     <>
+    <CookiesConsent/>
       <div className={style.centerherosurf + " px-4 py-5 text-center"}>
         <Link href="/">
           <Image

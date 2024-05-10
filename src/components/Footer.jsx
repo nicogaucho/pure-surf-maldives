@@ -62,6 +62,16 @@ export default function Footer() {
                   Careers
                 </Link>                  
                 </li>
+                <li className="nav-item mb-2">
+                <Link href="/privacy" className="nav-link p-0 text-white">
+                  Privacy Policy
+                </Link>                  
+                </li>
+                <li className="nav-item mb-2">
+                <Link href="/terms" className="nav-link p-0 text-white">
+                  Terms and Conditions
+                </Link>                  
+                </li>
               </ul>
             </div>
 
@@ -69,8 +79,8 @@ export default function Footer() {
               <h5 className={`${tropicalOrange.className} fs-4 tx-main-color`}>Contact us</h5>
               <ul className="nav flex-column">
                 <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Phone number: +960 775-0180</a></li>
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Whats app: +960 917-5113</a></li>
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Email: info.pureblue@pureblueretreat.com </a></li>
+                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Whats app: +34 643 542 843</a></li>
+                <li className="nav-item mb-2"><a href="mailto:info.pureblue@pureblueretreat.com" className="nav-link p-0 text-white">Email: info.pureblue@pureblueretreat.com </a></li>
               </ul>
             </div>
 

@@ -14,10 +14,12 @@ import islandhoppingURL from "../../../public/islandhopping.jpg";
 import wakeboardURL from "../../../public/wakeboard.jpg";
 import funtuberideURL from "../../../public/funtuberide.jpg";
 import Footer from "@/components/Footer";
+import CookiesConsent from "@/components/CookiesConsent";
 
 export default function Activities() {
   return (
     <>
+    <CookiesConsent/>
       <div className={style.centerheroaactivities + " px-4 py-5 text-center"}>
         <Link href="/">
           <Image
