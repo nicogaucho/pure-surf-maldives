@@ -18,7 +18,7 @@ export default function Privacy() {
              Privacy Policy - Pure Blue Retreat
             </p>
             <p className="text-secondary">
-            Welcome to Pure Blue Retreat's Privacy Policy. 
+            Welcome to Pure Blue Retreat&apos;s Privacy Policy. 
             This policy outlines how we collect, 
             use, and protect your personal data when you visit our website or use our services. 
             Pure Blue Retreat is committed to ensuring the privacy and security of your data.
