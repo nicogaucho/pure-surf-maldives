@@ -18,8 +18,8 @@ import freespiritURL from "../../public/freesurf.jpeg";
 import facilitiesURL from "../../public/facilities.jpg";
 import roomsURL from "../../public/room.jpg";
 import foodURL from "../../public/food.jpg";
-import yogacoursesURL from "../../public/yogacourses.jpg";
-import skatingURL from "../../public/skating.jpg";
+import yogacoursesURL from "../../public/y4.jpg";
+import skatingURL from "../../public/skate-activity.jpg";
 import snorkelingURL from "../../public/snorkeling.jpeg";
 import jetskyURL from "../../public/jetsky.jpg";
 import SocialComponent from '@/components/SocialComponent';
@@ -177,7 +177,7 @@ export default function Home() {
                     className="d-block mx-auto mb-3"
                   />
                   <p className="spacing tx-main-color p-0 m-0">SURFING</p>
-                  <p className="p-0 m-0">All kinds of waves</p>
+                  <p className="p-0 m-0">All kinds of waves, Gentle Reef Break</p>
                 </div>
               </div>
               <div className="col-6 mb-3">
@@ -189,7 +189,7 @@ export default function Home() {
                     className="d-block mx-auto mb-3"
                   />
                   <p className="spacing tx-main-color p-0 m-0">VIBES</p>
-                  <p className="p-0 m-0">only good vibes</p>
+                  <p className="p-0 m-0">Only good vibes</p>
                 </div>
               </div>
               <div className="col-6 mb-3">
@@ -201,7 +201,7 @@ export default function Home() {
                     className="d-block mx-auto mb-3"
                   />
                   <p className="spacing tx-main-color p-0 m-0">SEASON</p>
-                  <p className="p-0 m-0">May - January</p>
+                  <p className="p-0 m-0">March - November</p>
                 </div>
               </div>
               <div className="col-6 mb-3">
@@ -213,12 +213,13 @@ export default function Home() {
                     className="d-block mx-auto mb-3"
                   />
                   <p className="spacing tx-main-color p-0 m-0">PACKAGES</p>
-                  <p className="p-0 m-0">Starting from 700€</p>
+                  <p className="p-0 m-0">Starting from 690€</p>
                 </div>
               </div>
             </div>
             <button className="btn-book text-uppercase fw-bold">
-              Book Now
+              <a className="text-decoration-none text-white" id="book-nav"
+                 href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058">Book now</a>
             </button>
           </div>
         </div>
@@ -237,8 +238,8 @@ export default function Home() {
                 <span className="fw-bold tx-main-color">
                   Pure Blue Surf & Yoga retreat
                 </span>{" "}
-                provide you the perfect packages for all surfers . Eat, surf,
-                relaxe, Repeat is our Anthem
+                provides you the perfect packages for all surfers. Eat, Surf,
+                Relax, Repeat is our Anthem
               </p>
             </div>
           </div>
@@ -265,7 +266,7 @@ export default function Home() {
                         FIRST STEP
                       </h5>
                       <p className="card-text fw-bold">
-                        STARTING FROM 790€ / WEEK
+                        STARTING FROM 890€ / WEEK
                       </p>
                       <Link href="/packages">
                         <button className="btn-book text-uppercase fw-bold">
@@ -295,7 +296,7 @@ export default function Home() {
                         IMPROVEMENT
                       </h5>
                       <p className="card-text fw-bold">
-                        STARTING FROM 690€ / WEEK
+                        STARTING FROM 790€ / WEEK
                       </p>
                       <Link href="/packages">
                         <button className="btn-book text-uppercase fw-bold">
@@ -325,7 +326,7 @@ export default function Home() {
                         Free spirit
                       </h5>
                       <p className="card-text fw-bold">
-                        STARTING FROM 590€ / WEEK
+                        STARTING FROM 690€ / WEEK
                       </p>
                       <Link href="/packages">
                         <button className="btn-book text-uppercase fw-bold">
@@ -412,9 +413,9 @@ export default function Home() {
               </p>
               <p>
                 Maldives start to be world famous for his world class waves.
-                During the season, from march to November the pure nature of
+                During the season, from March to November the pure nature of
                 Maldives gives us constant and all level waves for us to enjoy,
-                scored, mastered.
+                score, master.
               </p>
             </div>
           </div>
@@ -460,8 +461,7 @@ export default function Home() {
                       Facilities
                     </p>
                     <p className="card-text">
-                      Your calm and relaxing space facing the Ocean: Noah Beach
-                      Lodge
+                      All you need to fully enjoy your retreat 
                     </p>
                   </div>
                 </div>
@@ -481,8 +481,7 @@ export default function Home() {
                   <div className="card-body text-center">
                     <p className={`fs-2 ${tropicalOrange.className}`}>Food</p>
                     <p className="card-text">
-                      Your calm and relaxing space facing the Ocean: Noah Beach
-                      Lodge
+                      Healthy and nourishing local food at Noah Beach Lodge
                     </p>
                   </div>
                 </div>
@@ -503,12 +502,12 @@ export default function Home() {
       {/* yoga section */}
       <div id="yoga-section" className="container my-5 py-5">
         <div className="row align-items-center justify-content-around">
-          <div className="col-12 col-md-5 mb-3">
+          <div className="col-12 col-md-4 mb-3">
             <Image
               alt="yoga classes"
               src={yogacoursesURL}
-              placeholder="blur"
               className="img-fluid"
+              blurDataURL
             />
           </div>
           <div className="col-12 col-md-5 mb-3">
@@ -520,7 +519,6 @@ export default function Home() {
               Try yoga at Pure Blue Surf & Yoga Retreat in the Maldives. Our
               yoga classes are led by experts and are great for everyone, no
               matter if you&apos;re new to yoga or have done it before.
-              It&apos;s a peaceful way to enjoy your time here.
             </p>
             <p className="fw-bold">How it works</p>
             <ul>
@@ -629,7 +627,7 @@ export default function Home() {
             <div className="col-12 text-center">
               <Link href="/activities">
                 <button className="btn-book text-uppercase fw-bold">
-                  SEE ALL ACTIVITIES
+                  SEE MORE ACTIVITIES
                 </button>
               </Link>
             </div>
@@ -649,8 +647,8 @@ export default function Home() {
               </p>
               <p>
                 Pure Blue surf&yoga retreat and Noah Beach lodge are a young
-                association getting along for the same purpose: giive and a
-                marvelous and affordable trues experiences of surfing
+                association getting along for the same purpose: give and a
+                marvelous and affordable true experiences of surfing
               </p>
             </div>
           </div>
@@ -742,7 +740,7 @@ export default function Home() {
                   width={50}
                   alt="good vibe icon"
                 />
-                <span className="ms-3">Good vibe only</span>
+                <span className="ms-3">Good vibes only</span>
               </div>
               <div className="col-12 col-md-4 mb-3 text-center">
                 <Image

@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from "next/link";
 import { tropicalOrange } from "@/fonts/fonts";
-import purelogoURL from "../../public/pure-surf-logo-white.png";
 import noahlogoURL from "../../public/noah-logo-bigger.png";
 
 export default function Footer() {

@@ -8,8 +8,11 @@ import jetskyURL from "../../../public/Jetsky1.jpg";
 import kayakURL from "../../../public/kayaking.jpg";
 import fishingURL from "../../../public/fishing.jpg";
 import sandBankURL from "../../../public/sand-bank.jpeg";
-import yoga1 from "../../../public/yoga1.jpg";
+import yoga1 from "../../../public/y1.jpg";
 import skateURL from "../../../public/skate.jpg";
+import islandhoppingURL from "../../../public/islandhopping.jpg";
+import wakeboardURL from "../../../public/wakeboard.jpg";
+import funtuberideURL from "../../../public/funtuberide.jpg";
 import Footer from "@/components/Footer";
 import CookiesConsent from "@/components/CookiesConsent";
 
@@ -121,15 +124,43 @@ export default function Activities() {
               <li className="nav-item" role="presentation">
                 <button
                   className="nav-link text-dark spacing text-uppercase fw-bold"
-                  id="yoga"
+                  id="wakeboard"
                   data-bs-toggle="tab"
-                  data-bs-target="#yoga-pane"
+                  data-bs-target="#wake-pane"
                   type="button"
                   role="tab"
-                  aria-controls="yoga-pane"
+                  aria-controls="wake-pane"
                   aria-selected="false"
                 >
-                  SURF&YOGA
+                  WAKE BOARD
+                </button>
+              </li>
+              <li className="nav-item" role="presentation">
+                <button
+                  className="nav-link text-dark spacing text-uppercase fw-bold"
+                  id="funtuberide"
+                  data-bs-toggle="tab"
+                  data-bs-target="#funtube-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="funtube-pane"
+                  aria-selected="false"
+                >
+                  Fun tube ride
+                </button>
+              </li>
+              <li className="nav-item" role="presentation">
+                <button
+                  className="nav-link text-dark spacing text-uppercase fw-bold"
+                  id="islandhoping"
+                  data-bs-toggle="tab"
+                  data-bs-target="#island-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="island-pane"
+                  aria-selected="false"
+                >
+                  Island hopping
                 </button>
               </li>
               <li className="nav-item" role="presentation">
@@ -201,17 +232,7 @@ export default function Activities() {
                               </th>
                               <th scope="col">
                                 <span className="tx-main-color">
-                                  Price PP for 3/more
-                                </span>
-                              </th>
-                              <th scope="col">
-                                <span className="tx-main-color">
-                                  Price PP for 2
-                                </span>
-                              </th>
-                              <th scope="col">
-                                <span className="tx-main-color">
-                                  Price PP for 1
+                                  Price
                                 </span>
                               </th>
                               <th scope="col">
@@ -224,10 +245,8 @@ export default function Activities() {
                           <tbody>
                             <tr>
                               <th scope="row">Fish Point snorkeling</th>
-                              <td>1.5 HRS</td>
-                              <td>$35</td>
-                              <td>$40</td>
-                              <td>$80</td>
+                              <td>2 HRS</td>
+                              <td>from $80</td>
                               <td>
                                 Explore the more vibrant marine life at Fish
                                 Point
@@ -235,20 +254,16 @@ export default function Activities() {
                             </tr>
                             <tr>
                               <th scope="row">Turtle snorkeling</th>
-                              <td>1.5 HRS</td>
-                              <td>$35</td>
-                              <td>$40</td>
-                              <td>$80</td>
+                              <td>2 HRS</td>
+                              <td>from $60</td>
                               <td>
                                 Swim with turtles in their natural habitat
                               </td>
                             </tr>
                             <tr>
-                              <th scope="row">Sing ray snorkeling (BOAT)</th>
-                              <td>1.5 HRS</td>
-                              <td>$35</td>
-                              <td>$40</td>
-                              <td>$80</td>
+                              <th scope="row">Stingray snorkeling</th>
+                              <td>2 HRS</td>
+                              <td>from $80</td>
                               <td>
                                 Experience the thrill of ray snorkeling from a
                                 boat
@@ -256,10 +271,8 @@ export default function Activities() {
                             </tr>
                             <tr>
                               <th scope="row">Coral garden snorkeling</th>
-                              <td>2.5 HRS</td>
-                              <td>$40</td>
-                              <td>$90</td>
-                              <td>$120</td>
+                              <td>2 HRS</td>
+                              <td>from $70</td>
                               <td>
                                 Discover the underwater beauty of the coral
                                 garden
@@ -267,20 +280,16 @@ export default function Activities() {
                             </tr>
                             <tr>
                               <th scope="row">Shark point snorkeling</th>
-                              <td>2.5 HRS</td>
+                              <td>2 HRS</td>
                               <td>
-                                $25 <br /> minimun 4
+                                from $80
                               </td>
-                              <td>$90</td>
-                              <td>$180</td>
                               <td>Dive into the adventure at Shark Point</td>
                             </tr>
                             <tr>
                               <th scope="row">Dolphin Cruise</th>
-                              <td>1.5 HRS</td>
-                              <td>$40</td>
-                              <td>$75</td>
-                              <td>$150</td>
+                              <td>2 HRS</td>
+                              <td>from $100</td>
                               <td>
                                 Criuse alongside dolphins in a relaxing journey
                               </td>
@@ -323,12 +332,10 @@ export default function Activities() {
                       <p className="lead tx-main-color">How to do it</p>
                       <p className="text-secondary">
                         Cruise in a clear blue water with the Kayak Cruise Trip
-                        of 2 hours.
+                        of 1 hours.
                       </p>
-                      <ul>
-                        <li>3 People or more $20 per person</li>
-                        <li>2 People $25 per person</li>
-                        <li>1 Person $40</li>
+                      <ul className="list-unstyled">
+                        <li className="fw-bold">Starting from 25$</li>
                       </ul>
                     </div>
                   </div>
@@ -366,10 +373,8 @@ export default function Activities() {
                       <p className="text-secondary">
                         Jet ski your way around the scenic waters..
                       </p>
-                      <ul>
-                        <li>3 People or more $35 per person</li>
-                        <li>2 People $40 per person</li>
-                        <li>1 Person $80</li>
+                      <ul className="list-unstyled">
+                        <li className="fw-bold">Starting from 50$</li>
                       </ul>
                     </div>
                   </div>
@@ -409,10 +414,8 @@ export default function Activities() {
                         Enjoy a serene sunset while catching your most beautiful
                         fish. <br /> Duration: 4 hours.
                       </p>
-                      <ul>
-                        <li>3 People or more $25 per person</li>
-                        <li>2 People $75 per person</li>
-                        <li>1 Person $150</li>
+                      <ul className="list-unstyled">
+                        <li className="fw-bold">Starting from 180$</li>
                       </ul>
                     </div>
                   </div>
@@ -454,10 +457,8 @@ export default function Activities() {
                         directly in the house at your arrival. <br /> Duration:
                         2 hours.
                       </p>
-                      <ul>
-                        <li>3 People or more $20 per person</li>
-                        <li>2 People $25 per person</li>
-                        <li>1 Person $50</li>
+                      <ul className="list-unstyled">
+                        <li className="fw-bold">Starting from 40$</li>
                       </ul>
                     </div>
                   </div>
@@ -465,7 +466,7 @@ export default function Activities() {
               </div>
               <div
                 className="tab-pane fade"
-                id="yoga-pane"
+                id="wake-pane"
                 role="tabpanel"
                 aria-labelledby="sand-back-tab"
                 tabIndex="0"
@@ -473,46 +474,93 @@ export default function Activities() {
                 <div className="container p-5">
                   <div className="row justify-content-around">
                     <div className="col-12 col-md-5 mb-3 mt-md-5">
-                      <Image src={yoga1} className="img-fluid" alt="" />
+                      <Image src={wakeboardURL} className="img-fluid" alt="wakeboard" />
                     </div>
                     <div className="col-12 col-md-5 mb-3">
                       <p
                         className={`${tropicalOrange.className} h1 tx-blue-color`}
                       >
-                        SURF&YOGA ULTRA EXCURSION
+                        WAKE BOARD
                       </p>
-                      <p className="lead tx-main-color">Surf Ultra</p>
+                      <p className="lead tx-main-color">Overview</p>
                       <p className="text-secondary">
-                        Improve your surfing with personalized video analysis,
-                        surf safaris to new spots, Surfskate classes, and
-                        dedicated coaching sessions to master your surf skills.
+                        Rid towed behind a motorboat in the crystal clear waters of Maldives
                       </p>
                       <p className="lead tx-main-color">How to do it</p>
                       <p className="text-secondary">
-                        You can add this activity on at time of reservation or
-                        directly in the house at your arrival. <br /> Duration:
-                        2 hours.daily.
-                      </p>
-                      <ul>
-                        <li>3 People or more $80 per person</li>
-                        <li>2 People $100 per person</li>
-                        <li>1 Person $150</li>
-                      </ul>
-                      <p className="lead tx-main-color">Yoga Ultra</p>
-                      <p className="text-secondary">
-                        Enjoy additional guided sessions, personalized coaching,
-                        and exclusive workshops to deepen your practice and find
-                        inner peace in the beautiful Maldives.
-                      </p>
-                      <p className="lead tx-main-color">How to do it</p>
-                      <p className="text-secondary">
-                        You can add this activity on at time of reservation or
+                        You can add this activity
                         directly in the house at your arrival.
                       </p>
-                      <ul>
-                        <li>3 People or more $45 per person</li>
-                        <li>2 People $50 per person</li>
-                        <li>1 Person $60</li>
+                      <ul className="list-unstyled">
+                        <li className="fw-bold">Starting from 80$</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="tab-pane fade"
+                id="funtube-pane"
+                role="tabpanel"
+                aria-labelledby="sand-back-tab"
+                tabIndex="0"
+              >
+                <div className="container p-5">
+                  <div className="row justify-content-around">
+                    <div className="col-12 col-md-5 mb-3 mt-md-5">
+                      <Image src={funtuberideURL} className="img-fluid" alt="" />
+                    </div>
+                    <div className="col-12 col-md-5 mb-3">
+                      <p
+                        className={`${tropicalOrange.className} h1 tx-blue-color`}
+                      >
+                        Fun tube ride
+                      </p>
+                      <p className="lead tx-main-color">Overview</p>
+                      <p className="text-secondary">
+                      Fun tube riding sitting in an inflatable tube towed behind a boat and enjoy the thrill of being pulled across the beautiful water
+                      </p>
+                      <p className="lead tx-main-color">How to do it</p>
+                      <p className="text-secondary">
+                        You can add this activity
+                        directly in the house at your arrival.
+                      </p>
+                      <ul className="list-unstyled">
+                        <li className="fw-bold">Starting from 80$</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="tab-pane fade"
+                id="island-pane"
+                role="tabpanel"
+                aria-labelledby="sand-back-tab"
+                tabIndex="0"
+              >
+                <div className="container p-5">
+                  <div className="row justify-content-around">
+                    <div className="col-12 col-md-5 mb-3 mt-md-5">
+                      <Image src={islandhoppingURL} className="img-fluid" alt="" />
+                    </div>
+                    <div className="col-12 col-md-5 mb-3">
+                      <p
+                        className={`${tropicalOrange.className} h1 tx-blue-color`}
+                      >
+                        Island Hopping
+                      </p>
+                      <p className="lead tx-main-color">Overview</p>
+                      <p className="text-secondary">
+                      Island hopping in the Maldives with Pure Blue surf and yoga retreat offers the opportunity to explore multiple islands in the stunning Maldives archipelago. You can discover secluded beaches, snorkel in crystal-clear waters, and immerse in the natural beauty and vibrant culture of this tropical paradise
+                      </p>
+                      <p className="lead tx-main-color">How to do it</p>
+                      <p className="text-secondary">
+                        You can add this activity
+                        directly in the house at your arrival.
+                      </p>
+                      <ul className="list-unstyled">
+                        <li className="fw-bold">Starting from 150$</li>
                       </ul>
                     </div>
                   </div>
@@ -547,10 +595,8 @@ export default function Activities() {
                         directly in the house at your arrival. <br /> Duration:
                         2 hours.
                       </p>
-                      <ul>
-                        <li>3 People or more $20 per person</li>
-                        <li>2 People $25 per person</li>
-                        <li>1 Person $50</li>
+                      <ul className="list-unstyled">
+                        <li className="fw-bold">Starting from 20$</li>
                       </ul>
                     </div>
                   </div>
@@ -596,7 +642,8 @@ export default function Activities() {
           <div className="row my-5">
             <div className="col-12 text-center">
               <button className="btn-book text-uppercase fw-bold">
-                Book now
+              <a className="text-decoration-none text-white" id="book-nav"
+                 href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058">Book now</a>
               </button>
             </div>
           </div>

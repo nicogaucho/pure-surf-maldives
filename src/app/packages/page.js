@@ -30,19 +30,22 @@ export default function Packages() {
       <div id="plans" className="container my-5 py-5">
         <div className="row justify-content-center">
           <div className="col-10 col-md-8">
-            <header className="mb-5">
-              <div className="pricing-header p-3 pb-md-4 mx-auto text-center">
-                <p className="h2 tx-main-color">Compare plans</p>
-                <p className="lead">
-                  Find your ideal package at Pure Blue Surf & Yoga Retreat in
-                  the Maldives. Whether you crave for adventure, relaxation, or
-                  yoga, we have the perfect option for you.
+            <header>
+              <div className="pricing-header pb-md-4 mx-auto text-center">
+                <p className="h3 tx-main-color">
+                  Find your ideal package at <br /> Pure Blue Surf & Yoga Retreat in
+                  the Maldives
+                </p>
+                <p className="text-secondary mt-3">
+                  Packages included 7 nights and 8 days of accommodation. All
+                  meal (breakfast, lunch, diner) , 10 yoga classes. Renting of
+                  the materiel ( reef booth , surf skate , snorkeling items )
                 </p>
               </div>
             </header>
           </div>
         </div>
-        <div className="table-responsive">
+        {/* <div className="table-responsive">
           <table className="table border align-middle">
             <thead>
               <tr>
@@ -100,13 +103,13 @@ export default function Packages() {
               </tr>
               <tr className="table-light">
                 <th scope="row">Prices</th>
+                <td>890€ / week</td>
                 <td>790€ / week</td>
                 <td>690€ / week</td>
-                <td>590€ / week</td>
               </tr>
             </tbody>
           </table>
-        </div>
+        </div> */}
       </div>
 
       <div id="explore" className="container">
@@ -192,14 +195,14 @@ export default function Packages() {
                       </p>
                       <p className="lead tx-main-color">Overview</p>
                       <p className="text-secondary">
-                        Our Pure Blue &quot;First Stemp&quot; package is perfect
+                        Our Pure Blue &quot;First Step&quot; package is perfect
                         for beginner surfers who want to learn to catch some
                         great waves step by step and join yoga classes to
                         stretch and relax. You will discover some of the best
                         beginner surf spots of Maldives and swim in crystalline
                         water. During the week there are also 2 yoga sessions by
                         the beautiful coast perfect to stretch and relax after
-                        surfing. That&quot;s not it! You will be able to try
+                        surfing. That&apos;s not it! You will be able to try
                         surf skateboarding and many other activities like
                         snorkelling or kayaking. Experience the joy of surfing
                         in paradise, where every moment is filled with adventure
@@ -213,6 +216,9 @@ export default function Packages() {
                         A typical day
                       </p>
                       <ul>
+                        <li>
+                          <strong>06.00</strong> – Hashtanga Yoga session.
+                        </li>
                         <li>
                           <strong>07.30</strong> – Healthy breakfast (or later
                           if surfing at dawn before breakfast).
@@ -232,7 +238,7 @@ export default function Packages() {
                           <strong>13.30</strong> – Another surf or two.
                         </li>
                         <li>
-                          <strong>17.30</strong> – Sunset Yoga (optional).
+                          <strong>18.00</strong> – Yin Yoga session.
                         </li>
                         <li>
                           <strong>19.30</strong> – Dinner.
@@ -273,10 +279,16 @@ export default function Packages() {
                       </p>
                       <div className="mt-5">
                         <p>
-                          <strong>From 790 €</strong> per person / Week
+                          <strong>From 890 €</strong> per person / Week
                         </p>
                         <button className="btn-book text-uppercase fw-bold">
-                          Book now
+                          <a
+                            className="text-decoration-none text-white"
+                            id="book-nav"
+                            href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058"
+                          >
+                            Book now
+                          </a>
                         </button>
                       </div>
                     </div>
@@ -360,8 +372,8 @@ export default function Packages() {
                       </p>
                       <ul>
                         <li>2 Yoga Classes</li>
-                        <li>Surf guiding for each lesson class 5 a week</li>
-                        <li>Surf skate class before surf class</li>
+                        <li>Surf guiding x 2</li>
+                        <li>Surf skate rental anytime</li>
                         <li>
                           2/3 boat trip a week to Sultan and Honkeys waves
                         </li>
@@ -384,10 +396,16 @@ export default function Packages() {
                       </p>
                       <div className="mt-5">
                         <p>
-                          <strong>From 690 €</strong> per person / Week
+                          <strong>From 790 €</strong> per person / Week
                         </p>
                         <button className="btn-book text-uppercase fw-bold">
-                          Book now
+                          <a
+                            className="text-decoration-none text-white"
+                            id="book-nav"
+                            href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058"
+                          >
+                            Book now
+                          </a>
                         </button>
                       </div>
                     </div>
@@ -492,10 +510,16 @@ export default function Packages() {
                       </p>
                       <div className="mt-5">
                         <p>
-                          <strong>From 590 €</strong> per person / Week
+                          <strong>From 690 €</strong> per person / Week
                         </p>
                         <button className="btn-book text-uppercase fw-bold">
-                          Book now
+                          <a
+                            className="text-decoration-none text-white"
+                            id="book-nav"
+                            href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058"
+                          >
+                            Book now
+                          </a>
                         </button>
                       </div>
                     </div>

@@ -35,10 +35,10 @@ export default function Surf() {
               Pristine waves and stunning tropical scenery.
             </p>
             <p className="text-secondary">
-              Our surf lessons are designed for all levels . Perfect for people
-              whom wants to start and learn in the paradise , <br /> for the one
+              Our surf lessons are designed for all levels. Perfect for people
+              whom wants to start and learn in the paradise, <br /> for the one
               who already know a bit about surfing and want to get better or
-              whom ready to score perfect waves ... <br /> Pure blue Surf & Yoga
+              whom ready to score perfect waves... <br /> Pure blue Surf & Yoga
               retreat will always provide you the best way to have fun and learn
               new things!
             </p>
@@ -128,7 +128,8 @@ export default function Surf() {
         <div className="row my-5">
           <div className="col-12 text-center">
             <button className="btn-book text-uppercase fw-bold">
-              Book now
+            <a className="text-decoration-none text-white" id="book-nav"
+                 href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058">Book now</a>
             </button>
           </div>
         </div>

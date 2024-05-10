@@ -6,7 +6,7 @@
 }
 
 .secondslide {
-  background: linear-gradient(var(--primary-color), transparent), url('../assets/Hero2.jpg');
+  background: linear-gradient(var(--primary-color), transparent), url('../assets/Hero2.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
