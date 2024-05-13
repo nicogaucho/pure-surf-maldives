@@ -13,7 +13,7 @@ import CookiesConsent from "@/components/CookiesConsent";
 export default function Surf() {
   return (
     <>
-    <CookiesConsent/>
+      <CookiesConsent />
       <div className={style.centerherosurf + " px-4 py-5 text-center"}>
         <Link href="/">
           <Image
@@ -57,6 +57,11 @@ export default function Surf() {
               Wether you are a beginner or an experienced surfer we have all the
               options for you to enjoy some of the best waves of Maldives and
               have fun in the blue clear water
+            </p>
+            <p className="mt-2 text-start">
+              Known as a true swell magnet during the season, Jailbreak, which is within walking
+              distance, offers perfect conditions with offshore winds and waves working at every tide
+              and size... Come and experience this world-class spot !
             </p>
           </div>
         </div>
@@ -128,8 +133,8 @@ export default function Surf() {
         <div className="row my-5">
           <div className="col-12 text-center">
             <button className="btn-book text-uppercase fw-bold">
-            <a className="text-decoration-none text-white" id="book-nav"
-                 href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058">Book now</a>
+              <a className="text-decoration-none text-white" id="book-nav"
+                href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058">Book now</a>
             </button>
           </div>
         </div>
