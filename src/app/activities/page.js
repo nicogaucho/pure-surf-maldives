@@ -10,6 +10,7 @@ import fishingURL from "../../../public/fishing.jpg";
 import sandBankURL from "../../../public/sand-bank.jpeg";
 import yoga1 from "../../../public/y1.jpg";
 import skateURL from "../../../public/skate.jpg";
+import boatTaxiURL from "../../../public/boat-taxi.webp";
 import islandhoppingURL from "../../../public/islandhopping.jpg";
 import wakeboardURL from "../../../public/wakeboard.jpg";
 import funtuberideURL from "../../../public/funtuberide.jpg";
@@ -19,7 +20,7 @@ import CookiesConsent from "@/components/CookiesConsent";
 export default function Activities() {
   return (
     <>
-    <CookiesConsent/>
+      <CookiesConsent />
       <div className={style.centerheroaactivities + " px-4 py-5 text-center"}>
         <Link href="/">
           <Image
@@ -175,6 +176,20 @@ export default function Activities() {
                   aria-selected="false"
                 >
                   SURF SKate
+                </button>
+              </li>
+              <li className="nav-item" role="presentation">
+                <button
+                  className="nav-link text-dark spacing text-uppercase fw-bold"
+                  id="boat-taxi"
+                  data-bs-toggle="tab"
+                  data-bs-target="#boat-taxi-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="boat-taxi-pane"
+                  aria-selected="false"
+                >
+                  BOAT TAXI
                 </button>
               </li>
             </ul>
@@ -407,7 +422,7 @@ export default function Activities() {
                         waves, fishing here is not just about the catch –
                         it&apos;s about the whole experience of being out on the
                         water, enjoying nature, and making memories that last a
-                        lifetime.
+                        lifetime.After your epic fishing trip taste the fish you caught during a delicious BBQ
                       </p>
                       <p className="lead tx-main-color">How to do it</p>
                       <p className="text-secondary">
@@ -518,7 +533,7 @@ export default function Activities() {
                       </p>
                       <p className="lead tx-main-color">Overview</p>
                       <p className="text-secondary">
-                      Fun tube riding sitting in an inflatable tube towed behind a boat and enjoy the thrill of being pulled across the beautiful water
+                        Fun tube riding sitting in an inflatable tube towed behind a boat and enjoy the thrill of being pulled across the beautiful water
                       </p>
                       <p className="lead tx-main-color">How to do it</p>
                       <p className="text-secondary">
@@ -552,7 +567,7 @@ export default function Activities() {
                       </p>
                       <p className="lead tx-main-color">Overview</p>
                       <p className="text-secondary">
-                      Island hopping in the Maldives with Pure Blue surf and yoga retreat offers the opportunity to explore multiple islands in the stunning Maldives archipelago. You can discover secluded beaches, snorkel in crystal-clear waters, and immerse in the natural beauty and vibrant culture of this tropical paradise
+                        Island hopping in the Maldives with Pure Blue surf and yoga retreat offers the opportunity to explore multiple islands in the stunning Maldives archipelago. You can discover secluded beaches, snorkel in crystal-clear waters, and immerse in the natural beauty and vibrant culture of this tropical paradise
                       </p>
                       <p className="lead tx-main-color">How to do it</p>
                       <p className="text-secondary">
@@ -586,17 +601,53 @@ export default function Activities() {
                       </p>
                       <p className="lead tx-main-color">Overview</p>
                       <p className="text-secondary">
-                        A sandbank excursion in the Maldives is like discovering
-                        your own privat
+                        Designed to improve your balance, agility and speed , surf skating offer an exhilarating way to enjoy the glide and surf culture no matter how are the waves .
+                        Take a private surf-skate class to improve your surf skills .
+                        Included surf-skate rent and protection.
                       </p>
                       <p className="lead tx-main-color">How to do it</p>
                       <p className="text-secondary">
                         You can add this activity on at time of reservation or
                         directly in the house at your arrival. <br /> Duration:
-                        2 hours.
+                        1 hour.
                       </p>
                       <ul className="list-unstyled">
                         <li className="fw-bold">Starting from 20$</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="tab-pane fade"
+                id="boat-taxi-pane"
+                role="tabpanel"
+                aria-labelledby="boat-taxi-tab"
+                tabIndex="0"
+              >
+                <div className="container p-5">
+                  <div className="row justify-content-around align-items-center">
+                    <div className="col-12 col-md-5 mb-3">
+                      <Image src={boatTaxiURL} className="img-fluid" alt="" />
+                    </div>
+                    <div className="col-12 col-md-5 mb-3">
+                      <p
+                        className={`${tropicalOrange.className} h1 tx-blue-color`}
+                      >
+                        Boat Taxi
+                      </p>
+                      <p className="lead tx-main-color">Overview</p>
+                      <p className="text-secondary">
+                        Leave with peace of mind, book your daily taxi for Honky&apos;s, Sultan and more ....
+                      </p>
+                      <p className="lead tx-main-color">How to do it</p>
+                      <p className="text-secondary">
+                        One departure per day, 6 departures a week. We choose the most appropriate time with the tide and the crowds.
+                        <br />
+                        *Taxi boat to further surf spot can cause additional fees.
+                      </p>
+                      <ul className="list-unstyled">
+                        <li className="fw-bold">Starting from 50 $ for 1 week </li>
                       </ul>
                     </div>
                   </div>
@@ -642,8 +693,8 @@ export default function Activities() {
           <div className="row my-5">
             <div className="col-12 text-center">
               <button className="btn-book text-uppercase fw-bold">
-              <a className="text-decoration-none text-white" id="book-nav"
-                 href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058">Book now</a>
+                <a className="text-decoration-none text-white" id="book-nav"
+                  href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058">Book now</a>
               </button>
             </div>
           </div>
