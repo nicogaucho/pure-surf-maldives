@@ -78,8 +78,12 @@ export default function Footer() {
             <div className="col mb-3">
               <h5 className={`${tropicalOrange.className} fs-4 tx-main-color`}>Contact us</h5>
               <ul className="nav flex-column">
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Phone number: +960 775-0180</a></li>
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Whats app: +34 643 542 843</a></li>
+                <li className="nav-item mb-2"><a href="tel:+9607750180" className="nav-link p-0 text-white">Phone number: +960 775-0180</a></li>
+                <li className="nav-item mb-2 p-0 text-white">
+                  {/* <a href=" https://wa.me/34643542843" target="_blank" className="nav-link p-0 text-white"> */}
+                  Whats app: +34 643 542 843
+                  {/* </a> */}
+                </li>
                 <li className="nav-item mb-2"><a href="mailto:info.pureblue@pureblueretreat.com" className="nav-link p-0 text-white">Email: info.pureblue@pureblueretreat.com </a></li>
               </ul>
             </div>

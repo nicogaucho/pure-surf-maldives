@@ -25,12 +25,13 @@ import jetskyURL from "../../public/jetsky.jpg";
 import SocialComponent from '@/components/SocialComponent';
 import { cookies } from "next/headers";
 import CookiesConsent from "@/components/CookiesConsent";
+import classes from '../styles/page.module.css'
 
 export default function Home() {
 
   return (
     <>
-    <CookiesConsent/>
+      <CookiesConsent />
       <Navbar />
       <div className="position-absolute heading">
         <div className="container">
@@ -163,10 +164,13 @@ export default function Home() {
       {/* video section */}
       <div className="container mb-3 mb-3">
         <div className="row align-items-center justify-content-around">
-          <div className="col-10 col-md-6 mb-3 text-center">
+          {/* <div className="col-10 col-md-6 mb-3 text-center">
+            <Video />
+          </div> */}
+          <div className="col-10 mb-5 text-center">
             <Video />
           </div>
-          <div className="col-10 col-md-6 mb-3 text-center">
+          {/* <div className="col-10 col-md-6 mb-3 text-center">
             <div className="row">
               <div className="col-6 mb-3">
                 <div className="card w-75 text-center border-0 d-block mx-auto mb-3">
@@ -220,6 +224,62 @@ export default function Home() {
             <button className="btn-book text-uppercase fw-bold">
               <a className="text-decoration-none text-white" id="book-nav"
                  href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058">Book now</a>
+            </button>
+          </div> */}
+          <div className="col-10 mb-3 text-center">
+            <div className="row">
+              <div className="col-6 col-md-3 mb-3">
+                <div className="card w-75 text-center border-0 d-block mx-auto mb-3">
+                  <Image
+                    alt="surf icon"
+                    src={surfing}
+                    placeholder="blur"
+                    className="d-block mx-auto mb-3"
+                  />
+                  <p className="spacing tx-main-color p-0 m-0">SURFING</p>
+                  <p className="p-0 m-0">All kinds of waves, Gentle Reef Break</p>
+                </div>
+              </div>
+              <div className="col-6 col-md-3 mb-3">
+                <div className="card w-75 text-center border-0 d-block mx-auto mb-3">
+                  <Image
+                    alt="goodvibe icon"
+                    src={goodvibe}
+                    placeholder="blur"
+                    className="d-block mx-auto mb-3"
+                  />
+                  <p className="spacing tx-main-color p-0 m-0">VIBES</p>
+                  <p className="p-0 m-0">Only good vibes</p>
+                </div>
+              </div>
+              <div className="col-6 col-md-3 mb-3">
+                <div className="card w-75 text-center border-0 d-block mx-auto mb-3">
+                  <Image
+                    alt="season icon"
+                    src={season}
+                    placeholder="blur"
+                    className="d-block mx-auto mb-3"
+                  />
+                  <p className="spacing tx-main-color p-0 m-0">SEASON</p>
+                  <p className="p-0 m-0">March - November</p>
+                </div>
+              </div>
+              <div className="col-6 col-md-3 mb-3">
+                <div className="card w-75 text-center border-0 d-block mx-auto mb-3 py-md-3">
+                  <Image
+                    alt="packages icon"
+                    src={packages}
+                    placeholder="blur"
+                    className="d-block mx-auto mb-3"
+                  />
+                  <p className="spacing tx-main-color p-0 m-0">PACKAGES</p>
+                  <p className="p-0 m-0">Starting from 690€</p>
+                </div>
+              </div>
+            </div>
+            <button className="btn-book text-uppercase fw-bold">
+              <a className="text-decoration-none text-white" id="book-nav"
+                href="https://neo.cultbooking.com/CPC/?agentcode=58078&hotelcode=128058">Book now</a>
             </button>
           </div>
         </div>
@@ -330,7 +390,7 @@ export default function Home() {
                       </p>
                       <Link href="/packages">
                         <button className="btn-book text-uppercase fw-bold">
-                        info package
+                          info package
                         </button>
                       </Link>
                     </div>
@@ -422,11 +482,11 @@ export default function Home() {
         </section>
         <div className="album py-5 bg-body-tertiary">
           <div className="container">
-            <div className="row mb-5">
+            <div className={`row mb-5 ${classes.accomodation}`}>
               <div className="col-12 col-md-4 mb-3">
                 <div
                   className="card d-block mx-auto rounded-0 border-0 shadow-sm"
-                  style={{ width: "23rem", height: "25rem" }}
+                  style={{ height: "25rem" }}
                 >
                   <Image
                     alt="rooms"
@@ -447,7 +507,7 @@ export default function Home() {
               <div className="col-12 col-md-4 mb-3">
                 <div
                   className="card d-block mx-auto rounded-0 border-0 shadow-sm"
-                  style={{ width: "23rem", height: "25rem" }}
+                  style={{ height: "25rem" }}
                 >
                   <Image
                     alt="facilities"
@@ -461,7 +521,7 @@ export default function Home() {
                       Facilities
                     </p>
                     <p className="card-text">
-                      All you need to fully enjoy your retreat 
+                      All you need to fully enjoy your retreat
                     </p>
                   </div>
                 </div>
@@ -469,7 +529,7 @@ export default function Home() {
               <div className="col-12 col-md-4 mb-3">
                 <div
                   className="card d-block mx-auto rounded-0 border-0 shadow-sm"
-                  style={{ width: "23rem", height: "25rem" }}
+                  style={{ height: "25rem" }}
                 >
                   <Image
                     alt="food"

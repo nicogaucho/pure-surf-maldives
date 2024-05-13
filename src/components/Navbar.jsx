@@ -32,6 +32,9 @@ export default function Navbar() {
         className={`navbar navbar-expand-lg fixed-top p-3 ${
           scrolling ? "bg-nav-custom-scroll" : "bg-nav-custom"
         }`}
+        style={{
+          maxWidth: "100vw",
+        }}
         aria-label="Thirteenth navbar example"
       >
         <div className="container-fluid">
