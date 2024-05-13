@@ -26,13 +26,16 @@ import SocialComponent from '@/components/SocialComponent';
 import { cookies } from "next/headers";
 import CookiesConsent from "@/components/CookiesConsent";
 import classes from '../styles/page.module.css'
+import OfferModal from "@/components/OfferModal";
 
 export default function Home() {
-
   return (
     <>
       <CookiesConsent />
       <Navbar />
+      <OfferModal />
+
+
       <div className="position-absolute heading">
         <div className="container">
           <div className="row justify-content-center">
@@ -326,7 +329,7 @@ export default function Home() {
                         FIRST STEP
                       </h5>
                       <p className="card-text fw-bold">
-                        STARTING FROM 890€ / WEEK
+                        STARTING FROM 860€ / WEEK
                       </p>
                       <Link href="/packages">
                         <button className="btn-book text-uppercase fw-bold">
