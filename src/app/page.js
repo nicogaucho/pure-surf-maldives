@@ -793,7 +793,7 @@ export default function Home() {
                   alt="good vibe icon"
                 />
                 <span className="ms-3">
-                  14 day free cancellation & free rebooking
+                  7 days free cancellation & free rebooking
                 </span>
               </div>
               <div className="col-12 col-md-4 mb-3 text-center">
