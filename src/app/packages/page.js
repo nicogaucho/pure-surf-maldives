@@ -261,7 +261,7 @@ export default function Packages() {
                         <li>5 surf class for beginner</li>
                         <li>boat trip to the beginner spot</li>
                         <li>surf and equipement (booth, leash ...)</li>
-                        <li>Introduction to surf skate class , 2 per week</li>
+                        <li>Introduction to surf skate class</li>
                         <li>Photo and video analysis</li>
                         <li>Surf culture and behavior</li>
                       </ul>
@@ -372,13 +372,13 @@ export default function Packages() {
                       </p>
                       <ul>
                         <li>2 Yoga Classes</li>
-                        <li>Surf guiding x 2</li>
+                        <li>Surf guiding</li>
                         <li>Surf skate rental anytime</li>
                         <li>
-                          2/3 boat trip a week to Sultan and Honkeys waves
+                          Boat trip to Sultan and Honkeys waves
                         </li>
                         <li>
-                          2 personal and intimate video and photo analyse a week
+                          Personal and intimate video and photo analyse a week
                         </li>
                         <li>Surfboard rental</li>
                       </ul>

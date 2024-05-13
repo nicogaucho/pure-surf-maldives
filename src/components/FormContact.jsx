@@ -42,7 +42,7 @@ export default function FormContact() {
                     placeholder="blur"
                   />
                 </div>
-                <div className="col-12 col-md-6 p-5 mb-5">
+                <div className="col-12 col-md-6 p-3 p-md-5 mb-5">
                   <div className="text-center">
                     <div className={`h1 fw-light ${tropicalOrange.className}`}>LET us know</div>
                     <p className="mb-4 text-muted">
