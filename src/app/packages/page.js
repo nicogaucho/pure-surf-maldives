@@ -279,7 +279,7 @@ export default function Packages() {
                       </p>
                       <div className="mt-5">
                         <p>
-                          <strong>From 890 €</strong> per person / Week
+                          <strong>From 860 €</strong> per person / Week
                         </p>
                         <button className="btn-book text-uppercase fw-bold">
                           <a
