@@ -23,10 +23,10 @@ import skatingURL from "../../public/skate-activity.jpg";
 import snorkelingURL from "../../public/snorkeling.jpeg";
 import jetskyURL from "../../public/jetsky.jpg";
 import SocialComponent from '@/components/SocialComponent';
-import { cookies } from "next/headers";
 import CookiesConsent from "@/components/CookiesConsent";
 import classes from '../styles/page.module.css'
 import OfferModal from "@/components/OfferModal";
+import GoogleAnalytics from "./utils/GoogleAnalytics";
 
 export default function Home() {
   return (
@@ -34,6 +34,7 @@ export default function Home() {
       <CookiesConsent />
       <Navbar />
       <OfferModal />
+      <GoogleAnalytics />
 
 
       <div className="position-absolute heading">
