@@ -4,6 +4,8 @@ import { avenirNext } from "@/fonts/fonts";
 import "./globals.css";
 import { Suspense } from 'react'
 import PixelEvents from '@/components/PixelEvents';
+import { GoogleAnalytics } from '@next/third-parties/google';
+import { GoogleTagManager } from '@next/third-parties/google'
 
 export const metadata = {
   title: "Pure Blue Surf & Yoga retreat Maldives",
@@ -16,12 +18,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="G-47F9C4L38H" />
       <body>
         {children}
         <Suspense fallback={null}>
           <PixelEvents />
         </Suspense>
       </body>
+      <GoogleAnalytics gaId="G-47F9C4L38H" />
       <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></Script>
     </html>
   );
